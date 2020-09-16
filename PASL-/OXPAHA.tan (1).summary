@@ -1,0 +1,56 @@
+--------------------------------------------------------------------------------------
+Timing Analyzer Summary
+--------------------------------------------------------------------------------------
+
+Type           : Worst-case tsu
+Slack          : N/A
+Required Time  : None
+Actual Time    : 2.682 ns
+From           : sw3
+To             : reg:inst|lpm_ff:lpm_ff_component|dffs[1]
+From Clock     : --
+To Clock       : clk
+Failed Paths   : 0
+
+Type           : Worst-case tco
+Slack          : N/A
+Required Time  : None
+Actual Time    : 16.073 ns
+From           : rom:inst3|altsyncram:altsyncram_component|altsyncram_h171:auto_generated|q_a[3]
+To             : ok
+From Clock     : clk
+To Clock       : --
+Failed Paths   : 0
+
+Type           : Worst-case th
+Slack          : N/A
+Required Time  : None
+Actual Time    : 3.579 ns
+From           : clr1_down
+To             : inst26
+From Clock     : --
+To Clock       : clk
+Failed Paths   : 0
+
+Type           : Clock Setup: 'clk'
+Slack          : N/A
+Required Time  : None
+Actual Time    : Restricted to 180.05 MHz ( period = 5.554 ns )
+From           : rom:inst3|altsyncram:altsyncram_component|altsyncram_h171:auto_generated|ram_block1a0~porta_address_reg4
+To             : rom:inst3|altsyncram:altsyncram_component|altsyncram_h171:auto_generated|q_a[3]
+From Clock     : clk
+To Clock       : clk
+Failed Paths   : 0
+
+Type           : Total number of failed paths
+Slack          : 
+Required Time  : 
+Actual Time    : 
+From           : 
+To             : 
+From Clock     : 
+To Clock       : 
+Failed Paths   : 0
+
+--------------------------------------------------------------------------------------
+

@@ -1,0 +1,6 @@
+<?xml version="1.0" ?>
+<LOG_ROOT>
+	<PROJECT NAME="rabota">
+		<CBX_INST_ENTRY INSTANCE_NAME="|Block2|dil22:inst2|lpm_counter:lpm_counter_component" CBX_FILE_NAME="cntr_8mh.tdf"/>
+	</PROJECT>
+</LOG_ROOT>

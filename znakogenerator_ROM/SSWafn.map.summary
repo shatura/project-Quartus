@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Wed Mar 18 17:31:24 2020
+Quartus II Version : 8.1 Build 163 10/28/2008 SJ Web Edition
+Revision Name : SSWafn
+Top-level Entity Name : La_uftwafla
+Family : Cyclone II
+Total logic elements : 10
+    Total combinational functions : 10
+    Dedicated logic registers : 6
+Total registers : 6
+Total pins : 10
+Total virtual pins : 0
+Total memory bits : 104
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0

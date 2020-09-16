@@ -1,0 +1,46 @@
+--------------------------------------------------------------------------------------
+Timing Analyzer Summary
+--------------------------------------------------------------------------------------
+
+Type           : Worst-case tco
+Slack          : N/A
+Required Time  : None
+Actual Time    : 39.446 ns
+From           : ss2:inst26|lpm_counter:lpm_counter_component|cntr_mrj:auto_generated|safe_q[0]
+To             : ledspl[0]
+From Clock     : h2
+To Clock       : --
+Failed Paths   : 0
+
+Type           : Clock Setup: 'h2'
+Slack          : N/A
+Required Time  : None
+Actual Time    : 41.49 MHz ( period = 24.105 ns )
+From           : ss2:inst26|lpm_counter:lpm_counter_component|cntr_mrj:auto_generated|safe_q[0]
+To             : ss2:inst26|lpm_counter:lpm_counter_component|cntr_mrj:auto_generated|safe_q[1]
+From Clock     : h2
+To Clock       : h2
+Failed Paths   : 0
+
+Type           : Clock Hold: 'h2'
+Slack          : Not operational: Clock Skew > Data Delay
+Required Time  : None
+Actual Time    : N/A
+From           : ss2:inst26|lpm_counter:lpm_counter_component|cntr_mrj:auto_generated|safe_q[3]
+To             : ss2:inst26|lpm_counter:lpm_counter_component|cntr_mrj:auto_generated|safe_q[3]
+From Clock     : h2
+To Clock       : h2
+Failed Paths   : 64
+
+Type           : Total number of failed paths
+Slack          : 
+Required Time  : 
+Actual Time    : 
+From           : 
+To             : 
+From Clock     : 
+To Clock       : 
+Failed Paths   : 64
+
+--------------------------------------------------------------------------------------
+

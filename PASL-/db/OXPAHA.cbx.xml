@@ -1,0 +1,8 @@
+<?xml version="1.0" ?>
+<LOG_ROOT>
+	<PROJECT NAME="OXPAHA">
+		<CBX_INST_ENTRY INSTANCE_NAME="|OXPAHA|cmp:inst1|lpm_compare:lpm_compare_component" CBX_FILE_NAME="cmpr_9hg.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|OXPAHA|cnt:inst2|lpm_counter:lpm_counter_component" CBX_FILE_NAME="cntr_mkh.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|OXPAHA|rom:inst3|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_tv61.tdf"/>
+	</PROJECT>
+</LOG_ROOT>

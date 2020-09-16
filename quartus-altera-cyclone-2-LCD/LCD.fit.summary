@@ -1,0 +1,16 @@
+Fitter Status : Successful - Sat Jan 30 14:43:56 2016
+Quartus II Version : 8.1 Build 163 10/28/2008 SJ Web Edition
+Revision Name : LCD
+Top-level Entity Name : LCD
+Family : Cyclone II
+Device : EP2C8F256C8
+Timing Models : Final
+Total logic elements : 82 / 8,256 ( < 1 % )
+    Total combinational functions : 82 / 8,256 ( < 1 % )
+    Dedicated logic registers : 56 / 8,256 ( < 1 % )
+Total registers : 56
+Total pins : 11 / 182 ( 6 % )
+Total virtual pins : 0
+Total memory bits : 256 / 165,888 ( < 1 % )
+Embedded Multiplier 9-bit elements : 0 / 36 ( 0 % )
+Total PLLs : 0 / 2 ( 0 % )

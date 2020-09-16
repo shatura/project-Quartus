@@ -1,0 +1,9 @@
+<?xml version="1.0" ?>
+<LOG_ROOT>
+	<PROJECT NAME="SSWafn">
+		<CBX_INST_ENTRY INSTANCE_NAME="|La_uftwafla|cunt:inst2|lpm_counter:lpm_counter_component" CBX_FILE_NAME="cntr_70j.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|La_uftwafla|del:inst3|lpm_counter:lpm_counter_component" CBX_FILE_NAME="cntr_amh.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|La_uftwafla|rom_2:inst1|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_vu61.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|La_uftwafla|rom_p1:inst|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_pu61.tdf"/>
+	</PROJECT>
+</LOG_ROOT>

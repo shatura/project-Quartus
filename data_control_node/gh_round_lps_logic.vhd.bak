@@ -1,0 +1,80 @@
+library ieee;
+use ieee.std_logic_1164.all; 
+use ieee.numeric_std.all;
+use ieee.std_logic_unsigned.all;
+
+entity gh_round_lps_logic is 	--предназначен для организации связей между модулями расчета L – преобразования, P – преобразования, S – преобразования
+ 
+port (
+		clk	: in std_logic;
+		clken	: in std_logic;
+		lps_arg		: in std_logic_vector(511 downto 0); 
+		valid_out	: out std_logic := '0';
+		lps_func	: out std_logic_vector(511 downto 0)
+);
+end gh_round_lps_logic;
+
+architecture arch of gh_round_lps_logic is 
+ component gh_round_subs_logic is
+ port (
+		clk	: in std_logic;
+		clken	: in std_logic;
+		lps_arg		: in std_logic_vector(511 downto 0); 
+		valid_out	: out std_logic := '0';
+		after_s	: out std_logic_vector(511 downto 0)
+);
+end component gh_round_subs_logic;
+	signal after_s	: std_logic_vector(511 downto 0); 
+	signal valid_out_subs : std_logic := '0';
+
+component gh_round_perm_logic is
+ port (
+		after_s	: in std_logic_vector(511 downto 0);
+		after_p	: out std_logic_vector(511 downto 0) 
+		);
+	end component gh_round_perm_logic;
+	
+	signal after_p	: std_logic_vector(511 downto 0); 
+	component gh_round_ltran_logic is
+	
+	port(
+		clk	: in std_logic;
+	clken	: in std_logic;
+	after_p		: in std_logic_vector(511 downto 0); 
+	valid_out	: out std_logic := '0';
+	lps_func	: out std_logic_vector(511 downto 0)
+	);
+	end component gh_round_ltran_logic;
+--Подключение модулей расчета преобразований и организация связей между ними:
+
+	gh_round_subs_logic_inst : gh_round_subs_logic
+	port map
+	(
+		clk	=> clk,
+		clken	=> clken,
+		lps_arg	=> lps_arg,
+		valid_out	=> valid_out_subs,
+		after_s	=> after_s
+		);
+	gh_round_perm_logic_inst : gh_round_perm_logic
+	
+	port map(
+		after_s	=> after_s,
+		after_p	=> after_p
+		);
+		
+	gh_round_ltran_logic_inst : gh_round_ltran_logic
+	
+	port map (
+		clk	=> clk,
+		clken	=> clken,
+		--clken		=> valid_out_subs, after_p	=> after_p,
+		valid_out	=> valid_out,
+		lps_func	=> lps_func
+		);
+
+	end arch;
+
+	
+
+

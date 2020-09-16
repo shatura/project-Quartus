@@ -1,0 +1,48 @@
+library ieee;
+use ieee.std_logic_1164.all; 
+use ieee.numeric_std.all;
+use ieee.std_logic_unsigned.all;
+
+
+entity gh_round_perm_logic is --предназначен	дл€	расчета	P	Ц преобразовани€ (преобразование перестановки).
+
+port (
+	after_s	: in std_logic_vector(511 downto 0);
+	after_p	: out std_logic_vector(511 downto 0)
+);
+	end gh_round_perm_logic;
+	
+	--«адаетс€ двумерна€ матрица из байт:
+	architecture arch of gh_round_perm_logic is
+	type mass_7x7_type is array (0 to 7) of std_logic_vector(7 downto 0);
+	
+	--«адаетс€ трехмерна€ матрица из байт:
+	
+	type mass_7x7x7_type is array (0 to 7) of mass_7x7_type;
+	signal after_s_int : mass_7x7x7_type := (others => (others => (others => '0')));
+	signal after_p_int : mass_7x7x7_type := (others => (others => (others => '0')));
+
+ 
+begin
+	--ќсуществл€етс€ переписывание байтов из входного массива в байты
+ 	--трехмерной	матрицы	дл€	того,	чтобы	входной	массив	512	разр€дов обрабатывать побайтово
+ 	
+ 	fill_inputs_cycle_i: for in_i in 0 to 7 generate fill_inputs_cycle_j: for in_j in 0 to 7 generate  after_s_int(in_i)(in_j)	<= after_s((7+in_i*64+in_j*8) downto in_i*64+in_j*8);
+
+	end generate fill_inputs_cycle_j; 
+	end generate fill_inputs_cycle_i;
+
+	--ќсуществл€етс€ побайтова€ обработка данных:
+	
+	rotate_cycle_i: for in_i in 0 to 7 generate rotate_cycle_j: for in_j in 0 to 7 generate after_p_int(in_j)(in_i) <= after_s_int(in_i)(in_j); 
+	end generate rotate_cycle_j;
+	end generate rotate_cycle_i;
+	
+	--ќсуществл€етс€ переписывание данных побайтово из матрицы в выходной массив дл€ того, 
+	--чтобы сформировать из трехмерной матрицы данных входной 512-разр€дный массив
+	
+	fill_outputs_cycle_i: for in_i in 0 to 7 generate fill_outputs_cycle_j: for in_j in 0 to 7 generate after_p((7+in_i*64+in_j*8) downto in_i*64+in_j*8) <= after_p_int(in_i)(in_j);
+	end generate fill_outputs_cycle_j; 
+	end generate fill_outputs_cycle_i;	
+end arch;
+

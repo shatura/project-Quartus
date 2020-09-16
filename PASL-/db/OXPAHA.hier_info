@@ -1,0 +1,255 @@
+|OXPAHA
+ok <= 7404:inst17.1
+clk => reg:inst.clock
+clk => reg:inst5.clock
+clk => inst4.CLK
+clk => rom:inst3.clock
+sw1 => reg:inst.data[3]
+sw2 => reg:inst.data[2]
+sw3 => reg:inst.data[1]
+sw4 => reg:inst.data[0]
+clr1_down => inst24.IN0
+pb_up => 7404:inst16.2
+not <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+sw8 => ~NO_FANOUT~
+
+
+|OXPAHA|7404:inst17
+1 <= 4.DB_MAX_OUTPUT_PORT_TYPE
+2 => 4.IN0
+
+
+|OXPAHA|cmp:inst1
+dataa[0] => lpm_compare:lpm_compare_component.dataa[0]
+dataa[1] => lpm_compare:lpm_compare_component.dataa[1]
+dataa[2] => lpm_compare:lpm_compare_component.dataa[2]
+dataa[3] => lpm_compare:lpm_compare_component.dataa[3]
+datab[0] => lpm_compare:lpm_compare_component.datab[0]
+datab[1] => lpm_compare:lpm_compare_component.datab[1]
+datab[2] => lpm_compare:lpm_compare_component.datab[2]
+datab[3] => lpm_compare:lpm_compare_component.datab[3]
+AeB <= lpm_compare:lpm_compare_component.AeB
+
+
+|OXPAHA|cmp:inst1|lpm_compare:lpm_compare_component
+dataa[0] => cmpr_9hg:auto_generated.dataa[0]
+dataa[1] => cmpr_9hg:auto_generated.dataa[1]
+dataa[2] => cmpr_9hg:auto_generated.dataa[2]
+dataa[3] => cmpr_9hg:auto_generated.dataa[3]
+datab[0] => cmpr_9hg:auto_generated.datab[0]
+datab[1] => cmpr_9hg:auto_generated.datab[1]
+datab[2] => cmpr_9hg:auto_generated.datab[2]
+datab[3] => cmpr_9hg:auto_generated.datab[3]
+clock => ~NO_FANOUT~
+aclr => ~NO_FANOUT~
+clken => ~NO_FANOUT~
+alb <= <GND>
+aeb <= cmpr_9hg:auto_generated.aeb
+agb <= <GND>
+aleb <= <GND>
+aneb <= <GND>
+ageb <= <GND>
+
+
+|OXPAHA|cmp:inst1|lpm_compare:lpm_compare_component|cmpr_9hg:auto_generated
+aeb <= eq_wire.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|OXPAHA|reg:inst
+aclr => lpm_ff:lpm_ff_component.aclr
+clock => lpm_ff:lpm_ff_component.clock
+data[0] => lpm_ff:lpm_ff_component.data[0]
+data[1] => lpm_ff:lpm_ff_component.data[1]
+data[2] => lpm_ff:lpm_ff_component.data[2]
+data[3] => lpm_ff:lpm_ff_component.data[3]
+q[0] <= lpm_ff:lpm_ff_component.q[0]
+q[1] <= lpm_ff:lpm_ff_component.q[1]
+q[2] <= lpm_ff:lpm_ff_component.q[2]
+q[3] <= lpm_ff:lpm_ff_component.q[3]
+
+
+|OXPAHA|reg:inst|lpm_ff:lpm_ff_component
+data[0] => dffs[0].DATAIN
+data[1] => dffs[1].DATAIN
+data[2] => dffs[2].DATAIN
+data[3] => dffs[3].DATAIN
+clock => dffs[3].CLK
+clock => dffs[2].CLK
+clock => dffs[1].CLK
+clock => dffs[0].CLK
+enable => dffs[3].ENA
+enable => dffs[2].ENA
+enable => dffs[1].ENA
+enable => dffs[0].ENA
+aset => ~NO_FANOUT~
+aload => ~NO_FANOUT~
+sclr => ~NO_FANOUT~
+sset => ~NO_FANOUT~
+sload => ~NO_FANOUT~
+q[0] <= dffs[0].DB_MAX_OUTPUT_PORT_TYPE
+q[1] <= dffs[1].DB_MAX_OUTPUT_PORT_TYPE
+q[2] <= dffs[2].DB_MAX_OUTPUT_PORT_TYPE
+q[3] <= dffs[3].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|OXPAHA|reg:inst5
+aclr => lpm_ff:lpm_ff_component.aclr
+clock => lpm_ff:lpm_ff_component.clock
+data[0] => lpm_ff:lpm_ff_component.data[0]
+data[1] => lpm_ff:lpm_ff_component.data[1]
+data[2] => lpm_ff:lpm_ff_component.data[2]
+data[3] => lpm_ff:lpm_ff_component.data[3]
+q[0] <= lpm_ff:lpm_ff_component.q[0]
+q[1] <= lpm_ff:lpm_ff_component.q[1]
+q[2] <= lpm_ff:lpm_ff_component.q[2]
+q[3] <= lpm_ff:lpm_ff_component.q[3]
+
+
+|OXPAHA|reg:inst5|lpm_ff:lpm_ff_component
+data[0] => dffs[0].DATAIN
+data[1] => dffs[1].DATAIN
+data[2] => dffs[2].DATAIN
+data[3] => dffs[3].DATAIN
+clock => dffs[3].CLK
+clock => dffs[2].CLK
+clock => dffs[1].CLK
+clock => dffs[0].CLK
+enable => dffs[3].ENA
+enable => dffs[2].ENA
+enable => dffs[1].ENA
+enable => dffs[0].ENA
+aset => ~NO_FANOUT~
+aload => ~NO_FANOUT~
+sclr => ~NO_FANOUT~
+sset => ~NO_FANOUT~
+sload => ~NO_FANOUT~
+q[0] <= dffs[0].DB_MAX_OUTPUT_PORT_TYPE
+q[1] <= dffs[1].DB_MAX_OUTPUT_PORT_TYPE
+q[2] <= dffs[2].DB_MAX_OUTPUT_PORT_TYPE
+q[3] <= dffs[3].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|OXPAHA|7404:inst16
+1 <= 4.DB_MAX_OUTPUT_PORT_TYPE
+2 => 4.IN0
+
+
+|OXPAHA|rom:inst3
+address[0] => altsyncram:altsyncram_component.address_a[0]
+address[1] => altsyncram:altsyncram_component.address_a[1]
+clock => altsyncram:altsyncram_component.clock0
+q[0] <= altsyncram:altsyncram_component.q_a[0]
+q[1] <= altsyncram:altsyncram_component.q_a[1]
+q[2] <= altsyncram:altsyncram_component.q_a[2]
+q[3] <= altsyncram:altsyncram_component.q_a[3]
+
+
+|OXPAHA|rom:inst3|altsyncram:altsyncram_component
+wren_a => ~NO_FANOUT~
+rden_a => ~NO_FANOUT~
+wren_b => ~NO_FANOUT~
+rden_b => ~NO_FANOUT~
+data_a[0] => ~NO_FANOUT~
+data_a[1] => ~NO_FANOUT~
+data_a[2] => ~NO_FANOUT~
+data_a[3] => ~NO_FANOUT~
+data_b[0] => ~NO_FANOUT~
+address_a[0] => altsyncram_tv61:auto_generated.address_a[0]
+address_a[1] => altsyncram_tv61:auto_generated.address_a[1]
+address_b[0] => ~NO_FANOUT~
+addressstall_a => ~NO_FANOUT~
+addressstall_b => ~NO_FANOUT~
+clock0 => altsyncram_tv61:auto_generated.clock0
+clock1 => ~NO_FANOUT~
+clocken0 => ~NO_FANOUT~
+clocken1 => ~NO_FANOUT~
+clocken2 => ~NO_FANOUT~
+clocken3 => ~NO_FANOUT~
+aclr0 => ~NO_FANOUT~
+aclr1 => ~NO_FANOUT~
+byteena_a[0] => ~NO_FANOUT~
+byteena_b[0] => ~NO_FANOUT~
+q_a[0] <= altsyncram_tv61:auto_generated.q_a[0]
+q_a[1] <= altsyncram_tv61:auto_generated.q_a[1]
+q_a[2] <= altsyncram_tv61:auto_generated.q_a[2]
+q_a[3] <= altsyncram_tv61:auto_generated.q_a[3]
+q_b[0] <= <GND>
+eccstatus[0] <= <GND>
+eccstatus[1] <= <GND>
+eccstatus[2] <= <GND>
+
+
+|OXPAHA|rom:inst3|altsyncram:altsyncram_component|altsyncram_tv61:auto_generated
+address_a[0] => ram_block1a0.PORTAADDR
+address_a[0] => ram_block1a1.PORTAADDR
+address_a[0] => ram_block1a2.PORTAADDR
+address_a[0] => ram_block1a3.PORTAADDR
+address_a[1] => ram_block1a0.PORTAADDR1
+address_a[1] => ram_block1a1.PORTAADDR1
+address_a[1] => ram_block1a2.PORTAADDR1
+address_a[1] => ram_block1a3.PORTAADDR1
+clock0 => ram_block1a0.CLK0
+clock0 => ram_block1a1.CLK0
+clock0 => ram_block1a2.CLK0
+clock0 => ram_block1a3.CLK0
+q_a[0] <= ram_block1a0.PORTADATAOUT
+q_a[1] <= ram_block1a1.PORTADATAOUT
+q_a[2] <= ram_block1a2.PORTADATAOUT
+q_a[3] <= ram_block1a3.PORTADATAOUT
+
+
+|OXPAHA|cnt:inst2
+clock => lpm_counter:lpm_counter_component.clock
+q[0] <= lpm_counter:lpm_counter_component.q[0]
+q[1] <= lpm_counter:lpm_counter_component.q[1]
+
+
+|OXPAHA|cnt:inst2|lpm_counter:lpm_counter_component
+clock => cntr_mkh:auto_generated.clock
+clk_en => ~NO_FANOUT~
+cnt_en => ~NO_FANOUT~
+updown => ~NO_FANOUT~
+aclr => ~NO_FANOUT~
+aset => ~NO_FANOUT~
+aconst => ~NO_FANOUT~
+aload => ~NO_FANOUT~
+sclr => ~NO_FANOUT~
+sset => ~NO_FANOUT~
+sconst => ~NO_FANOUT~
+sload => ~NO_FANOUT~
+data[0] => ~NO_FANOUT~
+data[1] => ~NO_FANOUT~
+cin => ~NO_FANOUT~
+q[0] <= cntr_mkh:auto_generated.q[0]
+q[1] <= cntr_mkh:auto_generated.q[1]
+cout <= <GND>
+eq[0] <= <GND>
+eq[1] <= <GND>
+eq[2] <= <GND>
+eq[3] <= <GND>
+eq[4] <= <GND>
+eq[5] <= <GND>
+eq[6] <= <GND>
+eq[7] <= <GND>
+eq[8] <= <GND>
+eq[9] <= <GND>
+eq[10] <= <GND>
+eq[11] <= <GND>
+eq[12] <= <GND>
+eq[13] <= <GND>
+eq[14] <= <GND>
+eq[15] <= <GND>
+
+
+|OXPAHA|cnt:inst2|lpm_counter:lpm_counter_component|cntr_mkh:auto_generated
+clock => counter_reg_bit1a[1].CLK
+clock => counter_reg_bit1a[0].CLK
+q[0] <= counter_reg_bit1a[0].REGOUT
+q[1] <= counter_reg_bit1a[1].REGOUT
+
+
+|OXPAHA|7404:inst14
+1 <= 4.DB_MAX_OUTPUT_PORT_TYPE
+2 => 4.IN0
+
+

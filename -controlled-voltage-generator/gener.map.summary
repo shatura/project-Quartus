@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Thu Mar 10 13:07:06 2016
+Quartus II Version : 8.1 Build 163 10/28/2008 SJ Web Edition
+Revision Name : gener
+Top-level Entity Name : gener
+Family : Cyclone III
+Total logic elements : 53
+    Total combinational functions : 53
+    Dedicated logic registers : 52
+Total registers : 52
+Total pins : 19
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 2

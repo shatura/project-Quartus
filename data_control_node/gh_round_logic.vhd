@@ -1,0 +1,149 @@
+library ieee;
+use ieee.std_logic_1164.all; 
+use ieee.numeric_std.all;
+use ieee.std_logic_unsigned.all;
+
+entity gh_round_logic is -- предназначен для расчета функции блочного шифра
+
+port (
+	clk	: in std_logic;
+	clken	: in std_logic;
+	hash_in		: in std_logic_vector(511 downto 0); 
+	numbits_in	: in std_logic_vector(511 downto 0); 
+	data_in		: in std_logic_vector(511 downto 0); valid_out	: out std_logic := '0';
+	hash_out	: out std_logic_vector(511 downto 0)
+	);
+	
+	end gh_round_logic;
+	
+	architecture arch of gh_round_logic is
+	
+	component gh_round_lps_logic is
+	
+	port (
+		clk	: in std_logic;
+		clken	: in std_logic;
+		lps_arg		: in std_logic_vector(511 downto 0);
+		valid_out	: out std_logic := '0';
+		lps_func	: out std_logic_vector(511 downto 0)
+		);
+		
+	end component gh_round_lps_logic; 
+
+	component gh_round_efunc_v2_logic is
+ 
+	port (
+		clk	: in std_logic;
+		clken	: in std_logic;
+		hash_in	: in std_logic_vector(511 downto 0);
+		data_in		: in std_logic_vector(511 downto 0); valid_out	: out std_logic := '0';
+		hash_out	: out std_logic_vector(511 downto 0)
+		);
+	
+	end component gh_round_efunc_v2_logic;
+	
+	-- Присвоение значений сигналу:
+	
+	signal first_lps_func : std_logic_vector(511 downto 0);
+	
+	-- Создание типа данных типа матрицы 2х512, 37х512, 37х1:
+	
+	type delay_type is array (0 to 1) of std_logic_vector(511 downto 0);
+
+		signal data_in_delay : delay_type; 
+		signal hash_in_delay : delay_type;
+
+	type dxorh_delay_type is array (0 to 36) of std_logic_vector(511 downto 0);
+
+	signal dxorh_delay : dxorh_delay_type;
+	signal efunc_out : std_logic_vector(511 downto 0); 
+	signal hash_out_ff : std_logic_vector(511 downto 0);
+
+	signal temp_xor1 : std_logic_vector(511 downto 0); 
+	signal temp_xor2 : std_logic_vector(511 downto 0);
+
+	type valid_out_delay_type is array (0 to 36) of std_logic;
+	signal valid_out_delay : valid_out_delay_type := (others => '0'); 
+	signal valid_lps : std_logic := '0';
+	signal valid_efunc_v2 : std_logic := '0'; 
+
+	begin
+	
+	--Предварительная подготовка входных данных для обработки:
+	
+	temp_xor1	<= hash_in xor numbits_in;
+	
+gh_round_lps_logic_inst : gh_round_lps_logic 
+
+	port map(
+		clk	=> clk,
+		clken	=> clken,
+		lps_arg		=> temp_xor1, valid_out	=> valid_lps,
+		lps_func	=> first_lps_func
+		);
+--Обработка данных:
+
+	process(clk)
+
+	 begin
+ 
+		if( rising_edge(clk) ) then
+		  if( clken = '1' ) then
+			data_in_delay(1) <= data_in_delay(0); 
+			data_in_delay(0) <= data_in; 
+			hash_in_delay(1) <= hash_in_delay(0); 
+			hash_in_delay(0) <= hash_in;
+		end if; 
+	end if;
+end process;
+
+--Промежуточная подготовка данных для обработки:
+
+	temp_xor2	<= data_in_delay(1) xor hash_in_delay(1);
+	process(clk)
+		begin
+			if( rising_edge(clk) ) then
+--Проверка сигнала clken (разрешения обработки данных):
+	if( clken = '1' ) then
+
+--Организация сдвигового регистра и сдвигового регистра значений 
+--валидности выходных данных из модуля gh_round_efunc_v2_logic_inst
+
+		dxorh_delay(1 to 36) <= dxorh_delay(0 to 35); 
+		dxorh_delay(0)	<= temp_xor2;
+		valid_out_delay(1 to 36) <= valid_out_delay(0 to 35); 
+		valid_out_delay(0) <= valid_efunc_v2;
+	else
+
+--Сброс значений валидности выходных данных:
+		valid_out_delay(0 to 36) <= (others => '0'); 
+	end if;end if; end process;
+	
+gh_round_efunc_v2_logic_inst : gh_round_efunc_v2_logic 
+
+port map(
+		clk	=> clk,
+		--clken	=> valid_lps, --clken,
+		clken	=> clken,
+		hash_in	=> first_lps_func,
+		data_in	=> data_in_delay(1), valid_out	=> valid_efunc_v2,
+		hash_out	=> efunc_out );
+--Процесс формирования выходных данных и сигнала валидности этих выходных данных
+
+process(clk)
+	begin
+	 	if( rising_edge(clk) ) then
+	--Проверка сигнала clken (разрешения обработки данных):
+	if( clken = '1' ) then
+		hash_out_ff <= efunc_out xor dxorh_delay(36); 
+		valid_out <= valid_out_delay(36);
+ 	else
+			valid_out <= '0';
+		end if; end if;
+	end process;
+		hash_out <= hash_out_ff;
+	end arch;
+
+
+	
+

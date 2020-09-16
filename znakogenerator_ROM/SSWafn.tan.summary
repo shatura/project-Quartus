@@ -1,0 +1,36 @@
+--------------------------------------------------------------------------------------
+Timing Analyzer Summary
+--------------------------------------------------------------------------------------
+
+Type           : Worst-case tco
+Slack          : N/A
+Required Time  : None
+Actual Time    : 11.755 ns
+From           : rom_2:inst1|altsyncram:altsyncram_component|altsyncram_vu61:auto_generated|q_a[1]
+To             : led[1]
+From Clock     : clk25MHZ
+To Clock       : --
+Failed Paths   : 0
+
+Type           : Clock Setup: 'clk25MHZ'
+Slack          : N/A
+Required Time  : None
+Actual Time    : Restricted to 180.05 MHz ( period = 5.554 ns )
+From           : rom_p1:inst|altsyncram:altsyncram_component|altsyncram_pu61:auto_generated|ram_block1a0~porta_address_reg3
+To             : rom_p1:inst|altsyncram:altsyncram_component|altsyncram_pu61:auto_generated|q_a[2]
+From Clock     : clk25MHZ
+To Clock       : clk25MHZ
+Failed Paths   : 0
+
+Type           : Total number of failed paths
+Slack          : 
+Required Time  : 
+Actual Time    : 
+From           : 
+To             : 
+From Clock     : 
+To Clock       : 
+Failed Paths   : 0
+
+--------------------------------------------------------------------------------------
+

@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Thu Mar 19 15:52:06 2020
+Quartus II Version : 8.1 Build 163 10/28/2008 SJ Web Edition
+Revision Name : OXPAHA
+Top-level Entity Name : OXPAHA
+Family : Cyclone II
+Total logic elements : 12
+    Total combinational functions : 7
+    Dedicated logic registers : 12
+Total registers : 12
+Total pins : 10
+Total virtual pins : 0
+Total memory bits : 16
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0
