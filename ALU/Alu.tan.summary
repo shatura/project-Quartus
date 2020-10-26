@@ -1,0 +1,66 @@
+--------------------------------------------------------------------------------------
+Timing Analyzer Summary
+--------------------------------------------------------------------------------------
+
+Type           : Worst-case tsu
+Slack          : N/A
+Required Time  : None
+Actual Time    : 0.965 ns
+From           : b[0]
+To             : reg1:inst10|lpm_ff:lpm_ff_component|dffs[0]
+From Clock     : --
+To Clock       : clk_27Mhz
+Failed Paths   : 0
+
+Type           : Worst-case tco
+Slack          : N/A
+Required Time  : None
+Actual Time    : 12.888 ns
+From           : reg1:inst11|lpm_ff:lpm_ff_component|dffs[0]
+To             : led[0]
+From Clock     : clk_27Mhz
+To Clock       : --
+Failed Paths   : 0
+
+Type           : Worst-case th
+Slack          : N/A
+Required Time  : None
+Actual Time    : 1.491 ns
+From           : codoper
+To             : inst6
+From Clock     : --
+To Clock       : codoper
+Failed Paths   : 0
+
+Type           : Clock Setup: 'clk_27Mhz'
+Slack          : N/A
+Required Time  : None
+Actual Time    : 183.86 MHz ( period = 5.439 ns )
+From           : reg1:inst10|lpm_ff:lpm_ff_component|dffs[0]
+To             : reg1:inst11|lpm_ff:lpm_ff_component|dffs[0]
+From Clock     : clk_27Mhz
+To Clock       : clk_27Mhz
+Failed Paths   : 0
+
+Type           : Clock Hold: 'clk_27Mhz'
+Slack          : Not operational: Clock Skew > Data Delay
+Required Time  : None
+Actual Time    : N/A
+From           : inst6
+To             : reg1:inst11|lpm_ff:lpm_ff_component|dffs[3]
+From Clock     : clk_27Mhz
+To Clock       : clk_27Mhz
+Failed Paths   : 4
+
+Type           : Total number of failed paths
+Slack          : 
+Required Time  : 
+Actual Time    : 
+From           : 
+To             : 
+From Clock     : 
+To Clock       : 
+Failed Paths   : 4
+
+--------------------------------------------------------------------------------------
+
