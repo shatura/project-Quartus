@@ -1,0 +1,553 @@
+Simulator report for comparator
+Tue Jun 01 14:24:00 2021
+Quartus II Version 8.1 Build 163 10/28/2008 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Simulator Summary
+  3. Simulator Settings
+  4. Simulation Waveforms
+  5. Coverage Summary
+  6. Complete 1/0-Value Coverage
+  7. Missing 1-Value Coverage
+  8. Missing 0-Value Coverage
+  9. Simulator INI Usage
+ 10. Simulator Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2008 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++--------------------------------------------+
+; Simulator Summary                          ;
++-----------------------------+--------------+
+; Type                        ; Value        ;
++-----------------------------+--------------+
+; Simulation Start Time       ; 0 ps         ;
+; Simulation End Time         ; 1.0 us       ;
+; Simulation Netlist Size     ; 235 nodes    ;
+; Simulation Coverage         ;      79.15 % ;
+; Total Number of Transitions ; 740          ;
+; Simulation Breakpoints      ; 0            ;
+; Family                      ; Stratix II   ;
+; Device                      ; EP2S15F484C3 ;
++-----------------------------+--------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------+
+; Simulator Settings                                                                                                          ;
++--------------------------------------------------------------------------------------------+----------------+---------------+
+; Option                                                                                     ; Setting        ; Default Value ;
++--------------------------------------------------------------------------------------------+----------------+---------------+
+; Simulation mode                                                                            ; Timing         ; Timing        ;
+; Start time                                                                                 ; 0 ns           ; 0 ns          ;
+; Simulation results format                                                                  ; CVWF           ;               ;
+; Vector input source                                                                        ; hectcetdia.vwf ;               ;
+; Add pins automatically to simulation output waveforms                                      ; On             ; On            ;
+; Check outputs                                                                              ; Off            ; Off           ;
+; Report simulation coverage                                                                 ; On             ; On            ;
+; Display complete 1/0 value coverage report                                                 ; On             ; On            ;
+; Display missing 1-value coverage report                                                    ; On             ; On            ;
+; Display missing 0-value coverage report                                                    ; On             ; On            ;
+; Detect setup and hold time violations                                                      ; Off            ; Off           ;
+; Detect glitches                                                                            ; Off            ; Off           ;
+; Disable timing delays in Timing Simulation                                                 ; Off            ; Off           ;
+; Generate Signal Activity File                                                              ; Off            ; Off           ;
+; Generate VCD File for PowerPlay Power Analyzer                                             ; On             ; Off           ;
+; VCD File for PowerPlay Power Analyzer output destination                                   ; comparator.vcd ;               ;
+; Group bus channels in simulation results                                                   ; Off            ; Off           ;
+; Preserve fewer signal transitions to reduce memory requirements                            ; On             ; On            ;
+; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE     ; INPUT_EDGE    ;
+; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off            ; Off           ;
+; Overwrite Waveform Inputs With Simulation Outputs                                          ; Off            ;               ;
+; Perform Glitch Filtering in Timing Simulation                                              ; Auto           ; Auto          ;
++--------------------------------------------------------------------------------------------+----------------+---------------+
+
+
++----------------------+
+; Simulation Waveforms ;
++----------------------+
+Waveform report data cannot be output to ASCII.
+Please use Quartus II to view the waveform report data.
+
+
++--------------------------------------------------------------------+
+; Coverage Summary                                                   ;
++-----------------------------------------------------+--------------+
+; Type                                                ; Value        ;
++-----------------------------------------------------+--------------+
+; Total coverage as a percentage                      ;      79.15 % ;
+; Total nodes checked                                 ; 235          ;
+; Total output ports checked                          ; 235          ;
+; Total output ports with complete 1/0-value coverage ; 186          ;
+; Total output ports with no 1/0-value coverage       ; 49           ;
+; Total output ports with no 1-value coverage         ; 49           ;
+; Total output ports with no 0-value coverage         ; 49           ;
++-----------------------------------------------------+--------------+
+
+
+The following table displays output ports that toggle between 1 and 0 during simulation.
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Complete 1/0-Value Coverage                                                                                                                                                                                                            ;
++----------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------+------------------+
+; Node Name                                                                                                ; Output Port Name                                                                                         ; Output Port Type ;
++----------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------+------------------+
+; |hestcetcomp|tronecomp:inst1|hsestcomp1:inst|voscomp1:inst|cetcomp1:inst|comparator1:inst|inst14~644     ; |hestcetcomp|tronecomp:inst1|hsestcomp1:inst|voscomp1:inst|cetcomp1:inst|comparator1:inst|inst14~644     ; combout          ;
+; |hestcetcomp|tronecomp:inst1|hsestcomp1:inst|voscomp1:inst|cetcomp1:inst|comparator1:inst|inst14~645     ; |hestcetcomp|tronecomp:inst1|hsestcomp1:inst|voscomp1:inst|cetcomp1:inst|comparator1:inst|inst14~645     ; combout          ;
+; |hestcetcomp|tronecomp:inst1|hsestcomp1:inst|voscomp1:inst|cetcomp1:inst|comparator1:inst|inst14~646     ; |hestcetcomp|tronecomp:inst1|hsestcomp1:inst|voscomp1:inst|cetcomp1:inst|comparator1:inst|inst14~646     ; combout          ;
+; |hestcetcomp|tronecomp1:inst|hsestcomp1:inst1|voscomp1:inst1|cetcomp1:inst1|comparator1:inst2|inst12~194 ; |hestcetcomp|tronecomp1:inst|hsestcomp1:inst1|voscomp1:inst1|cetcomp1:inst1|comparator1:inst2|inst12~194 ; combout          ;
+; |hestcetcomp|tronecomp:inst1|hsestcomp1:inst|voscomp1:inst|cetcomp1:inst|comparator1:inst|inst14~647     ; |hestcetcomp|tronecomp:inst1|hsestcomp1:inst|voscomp1:inst|cetcomp1:inst|comparator1:inst|inst14~647     ; combout          ;
+; |hestcetcomp|tronecomp1:inst|hsestcomp1:inst1|voscomp1:inst1|cetcomp1:inst1|comparator1:inst2|inst12~195 ; |hestcetcomp|tronecomp1:inst|hsestcomp1:inst1|voscomp1:inst1|cetcomp1:inst1|comparator1:inst2|inst12~195 ; combout          ;
+; |hestcetcomp|tronecomp1:inst|hsestcomp1:inst1|voscomp1:inst1|cetcomp1:inst1|comparator1:inst2|inst12~196 ; |hestcetcomp|tronecomp1:inst|hsestcomp1:inst1|voscomp1:inst1|cetcomp1:inst1|comparator1:inst2|inst12~196 ; combout          ;
+; |hestcetcomp|tronecomp1:inst|hsestcomp1:inst1|voscomp1:inst1|cetcomp1:inst1|comparator1:inst2|inst12~197 ; |hestcetcomp|tronecomp1:inst|hsestcomp1:inst1|voscomp1:inst1|cetcomp1:inst1|comparator1:inst2|inst12~197 ; combout          ;
+; |hestcetcomp|tronecomp1:inst|hsestcomp1:inst1|voscomp1:inst1|cetcomp1:inst1|comparator1:inst2|inst12~198 ; |hestcetcomp|tronecomp1:inst|hsestcomp1:inst1|voscomp1:inst1|cetcomp1:inst1|comparator1:inst2|inst12~198 ; combout          ;
+; |hestcetcomp|tronecomp1:inst|hsestcomp1:inst1|voscomp1:inst1|cetcomp1:inst1|comparator1:inst2|inst12~199 ; |hestcetcomp|tronecomp1:inst|hsestcomp1:inst1|voscomp1:inst1|cetcomp1:inst1|comparator1:inst2|inst12~199 ; combout          ;
+; |hestcetcomp|tronecomp1:inst|hsestcomp1:inst1|voscomp1:inst1|cetcomp1:inst1|comparator1:inst2|inst12~200 ; |hestcetcomp|tronecomp1:inst|hsestcomp1:inst1|voscomp1:inst1|cetcomp1:inst1|comparator1:inst2|inst12~200 ; combout          ;
+; |hestcetcomp|tronecomp1:inst|hsestcomp1:inst1|voscomp1:inst1|cetcomp1:inst1|comparator1:inst2|inst12~201 ; |hestcetcomp|tronecomp1:inst|hsestcomp1:inst1|voscomp1:inst1|cetcomp1:inst1|comparator1:inst2|inst12~201 ; combout          ;
+; |hestcetcomp|tronecomp1:inst|hsestcomp1:inst1|voscomp1:inst1|cetcomp1:inst1|comparator1:inst2|inst12~202 ; |hestcetcomp|tronecomp1:inst|hsestcomp1:inst1|voscomp1:inst1|cetcomp1:inst1|comparator1:inst2|inst12~202 ; combout          ;
+; |hestcetcomp|tronecomp1:inst|hsestcomp1:inst1|voscomp1:inst1|cetcomp1:inst1|comparator1:inst2|inst12~203 ; |hestcetcomp|tronecomp1:inst|hsestcomp1:inst1|voscomp1:inst1|cetcomp1:inst1|comparator1:inst2|inst12~203 ; combout          ;
+; |hestcetcomp|tronecomp1:inst|hsestcomp1:inst1|voscomp1:inst1|cetcomp1:inst1|comparator1:inst2|inst12~204 ; |hestcetcomp|tronecomp1:inst|hsestcomp1:inst1|voscomp1:inst1|cetcomp1:inst1|comparator1:inst2|inst12~204 ; combout          ;
+; |hestcetcomp|tronecomp1:inst|hsestcomp1:inst1|voscomp1:inst1|cetcomp1:inst1|comparator1:inst2|inst12~205 ; |hestcetcomp|tronecomp1:inst|hsestcomp1:inst1|voscomp1:inst1|cetcomp1:inst1|comparator1:inst2|inst12~205 ; combout          ;
+; |hestcetcomp|tronecomp1:inst|hsestcomp1:inst1|voscomp1:inst1|cetcomp1:inst1|comparator1:inst2|inst12~206 ; |hestcetcomp|tronecomp1:inst|hsestcomp1:inst1|voscomp1:inst1|cetcomp1:inst1|comparator1:inst2|inst12~206 ; combout          ;
+; |hestcetcomp|tronecomp1:inst|hsestcomp1:inst1|voscomp1:inst1|cetcomp1:inst1|comparator1:inst2|inst12~207 ; |hestcetcomp|tronecomp1:inst|hsestcomp1:inst1|voscomp1:inst1|cetcomp1:inst1|comparator1:inst2|inst12~207 ; combout          ;
+; |hestcetcomp|tronecomp1:inst|hsestcomp1:inst1|voscomp1:inst1|cetcomp1:inst1|comparator1:inst2|inst12~208 ; |hestcetcomp|tronecomp1:inst|hsestcomp1:inst1|voscomp1:inst1|cetcomp1:inst1|comparator1:inst2|inst12~208 ; combout          ;
+; |hestcetcomp|tronecomp1:inst|hsestcomp1:inst1|voscomp1:inst1|cetcomp1:inst1|comparator1:inst2|inst10~11  ; |hestcetcomp|tronecomp1:inst|hsestcomp1:inst1|voscomp1:inst1|cetcomp1:inst1|comparator1:inst2|inst10~11  ; combout          ;
+; |hestcetcomp|tronecomp1:inst|hsestcomp1:inst1|voscomp1:inst1|cetcomp1:inst1|comparator1:inst2|inst12~209 ; |hestcetcomp|tronecomp1:inst|hsestcomp1:inst1|voscomp1:inst1|cetcomp1:inst1|comparator1:inst2|inst12~209 ; combout          ;
+; |hestcetcomp|tronecomp1:inst|hsestcomp1:inst1|voscomp1:inst1|cetcomp1:inst1|comparator1:inst2|inst12~210 ; |hestcetcomp|tronecomp1:inst|hsestcomp1:inst1|voscomp1:inst1|cetcomp1:inst1|comparator1:inst2|inst12~210 ; combout          ;
+; |hestcetcomp|tronecomp1:inst|hsestcomp1:inst1|voscomp1:inst1|cetcomp1:inst1|comparator1:inst2|inst12~211 ; |hestcetcomp|tronecomp1:inst|hsestcomp1:inst1|voscomp1:inst1|cetcomp1:inst1|comparator1:inst2|inst12~211 ; combout          ;
+; |hestcetcomp|tronecomp1:inst|hsestcomp1:inst1|voscomp1:inst1|cetcomp1:inst1|comparator1:inst2|inst12~212 ; |hestcetcomp|tronecomp1:inst|hsestcomp1:inst1|voscomp1:inst1|cetcomp1:inst1|comparator1:inst2|inst12~212 ; combout          ;
+; |hestcetcomp|tronecomp1:inst|hsestcomp1:inst1|voscomp1:inst1|cetcomp1:inst1|comparator1:inst2|inst12~213 ; |hestcetcomp|tronecomp1:inst|hsestcomp1:inst1|voscomp1:inst1|cetcomp1:inst1|comparator1:inst2|inst12~213 ; combout          ;
+; |hestcetcomp|tronecomp1:inst|hsestcomp1:inst1|voscomp1:inst1|cetcomp1:inst1|comparator1:inst2|inst12~214 ; |hestcetcomp|tronecomp1:inst|hsestcomp1:inst1|voscomp1:inst1|cetcomp1:inst1|comparator1:inst2|inst12~214 ; combout          ;
+; |hestcetcomp|tronecomp1:inst|hsestcomp1:inst1|voscomp1:inst1|cetcomp1:inst1|comparator1:inst2|inst12~215 ; |hestcetcomp|tronecomp1:inst|hsestcomp1:inst1|voscomp1:inst1|cetcomp1:inst1|comparator1:inst2|inst12~215 ; combout          ;
+; |hestcetcomp|tronecomp1:inst|hsestcomp1:inst1|voscomp1:inst1|cetcomp1:inst1|comparator1:inst2|inst12~216 ; |hestcetcomp|tronecomp1:inst|hsestcomp1:inst1|voscomp1:inst1|cetcomp1:inst1|comparator1:inst2|inst12~216 ; combout          ;
+; |hestcetcomp|tronecomp1:inst|hsestcomp1:inst1|voscomp1:inst1|cetcomp1:inst1|comparator1:inst2|inst12~217 ; |hestcetcomp|tronecomp1:inst|hsestcomp1:inst1|voscomp1:inst1|cetcomp1:inst1|comparator1:inst2|inst12~217 ; combout          ;
+; |hestcetcomp|tronecomp1:inst|hsestcomp1:inst1|voscomp1:inst1|cetcomp1:inst|comparator1:inst|inst14~26    ; |hestcetcomp|tronecomp1:inst|hsestcomp1:inst1|voscomp1:inst1|cetcomp1:inst|comparator1:inst|inst14~26    ; combout          ;
+; |hestcetcomp|tronecomp1:inst|hsestcomp1:inst1|voscomp1:inst|cetcomp1:inst1|comparator1:inst|inst14~26    ; |hestcetcomp|tronecomp1:inst|hsestcomp1:inst1|voscomp1:inst|cetcomp1:inst1|comparator1:inst|inst14~26    ; combout          ;
+; |hestcetcomp|tronecomp1:inst|hsestcomp1:inst|voscomp1:inst1|cetcomp1:inst1|comparator1:inst|inst14~26    ; |hestcetcomp|tronecomp1:inst|hsestcomp1:inst|voscomp1:inst1|cetcomp1:inst1|comparator1:inst|inst14~26    ; combout          ;
+; |hestcetcomp|tronecomp1:inst|hsestcomp1:inst|voscomp1:inst1|cetcomp1:inst|comparator1:inst|inst14~26     ; |hestcetcomp|tronecomp1:inst|hsestcomp1:inst|voscomp1:inst1|cetcomp1:inst|comparator1:inst|inst14~26     ; combout          ;
+; |hestcetcomp|tronecomp1:inst|hsestcomp1:inst|voscomp1:inst|cetcomp1:inst1|comparator1:inst|inst14~26     ; |hestcetcomp|tronecomp1:inst|hsestcomp1:inst|voscomp1:inst|cetcomp1:inst1|comparator1:inst|inst14~26     ; combout          ;
+; |hestcetcomp|tronecomp1:inst|hsestcomp1:inst|voscomp1:inst|cetcomp1:inst|comparator1:inst|inst14~26      ; |hestcetcomp|tronecomp1:inst|hsestcomp1:inst|voscomp1:inst|cetcomp1:inst|comparator1:inst|inst14~26      ; combout          ;
+; |hestcetcomp|tronecomp:inst1|hsestcomp1:inst|voscomp1:inst1|cetcomp1:inst1|comparator1:inst|inst14~26    ; |hestcetcomp|tronecomp:inst1|hsestcomp1:inst|voscomp1:inst1|cetcomp1:inst1|comparator1:inst|inst14~26    ; combout          ;
+; |hestcetcomp|tronecomp:inst1|hsestcomp1:inst|voscomp1:inst1|cetcomp1:inst|comparator1:inst|inst14~26     ; |hestcetcomp|tronecomp:inst1|hsestcomp1:inst|voscomp1:inst1|cetcomp1:inst|comparator1:inst|inst14~26     ; combout          ;
+; |hestcetcomp|tronecomp:inst1|hsestcomp1:inst|voscomp1:inst|cetcomp1:inst1|comparator1:inst|inst14~26     ; |hestcetcomp|tronecomp:inst1|hsestcomp1:inst|voscomp1:inst|cetcomp1:inst1|comparator1:inst|inst14~26     ; combout          ;
+; |hestcetcomp|tronecomp:inst1|hsestcomp1:inst|voscomp1:inst|cetcomp1:inst|comparator1:inst|inst14~648     ; |hestcetcomp|tronecomp:inst1|hsestcomp1:inst|voscomp1:inst|cetcomp1:inst|comparator1:inst|inst14~648     ; combout          ;
+; |hestcetcomp|tronecomp:inst1|hsestcomp1:inst|voscomp1:inst|cetcomp1:inst|comparator1:inst|inst14~649     ; |hestcetcomp|tronecomp:inst1|hsestcomp1:inst|voscomp1:inst|cetcomp1:inst|comparator1:inst|inst14~649     ; combout          ;
+; |hestcetcomp|tronecomp1:inst|hsestcomp1:inst1|voscomp1:inst1|cetcomp1:inst1|comparator1:inst2|inst12~218 ; |hestcetcomp|tronecomp1:inst|hsestcomp1:inst1|voscomp1:inst1|cetcomp1:inst1|comparator1:inst2|inst12~218 ; combout          ;
+; |hestcetcomp|tronecomp:inst1|hsestcomp1:inst|voscomp1:inst|cetcomp1:inst|comparator1:inst|inst14~652     ; |hestcetcomp|tronecomp:inst1|hsestcomp1:inst|voscomp1:inst|cetcomp1:inst|comparator1:inst|inst14~652     ; combout          ;
+; |hestcetcomp|tronecomp:inst1|hsestcomp1:inst|voscomp1:inst|cetcomp1:inst|comparator1:inst|inst14~653     ; |hestcetcomp|tronecomp:inst1|hsestcomp1:inst|voscomp1:inst|cetcomp1:inst|comparator1:inst|inst14~653     ; combout          ;
+; |hestcetcomp|tronecomp:inst1|hsestcomp1:inst|voscomp1:inst|cetcomp1:inst|comparator1:inst|inst14~654     ; |hestcetcomp|tronecomp:inst1|hsestcomp1:inst|voscomp1:inst|cetcomp1:inst|comparator1:inst|inst14~654     ; combout          ;
+; |hestcetcomp|tronecomp:inst1|hsestcomp1:inst|voscomp1:inst|cetcomp1:inst|comparator1:inst|inst14~655     ; |hestcetcomp|tronecomp:inst1|hsestcomp1:inst|voscomp1:inst|cetcomp1:inst|comparator1:inst|inst14~655     ; combout          ;
+; |hestcetcomp|tronecomp:inst1|hsestcomp1:inst|voscomp1:inst|cetcomp1:inst|comparator1:inst|inst14~657     ; |hestcetcomp|tronecomp:inst1|hsestcomp1:inst|voscomp1:inst|cetcomp1:inst|comparator1:inst|inst14~657     ; combout          ;
+; |hestcetcomp|tronecomp:inst1|hsestcomp1:inst|voscomp1:inst|cetcomp1:inst1|comparator1:inst|inst14~27     ; |hestcetcomp|tronecomp:inst1|hsestcomp1:inst|voscomp1:inst|cetcomp1:inst1|comparator1:inst|inst14~27     ; combout          ;
+; |hestcetcomp|tronecomp:inst1|hsestcomp1:inst|voscomp1:inst1|cetcomp1:inst|comparator1:inst|inst14~27     ; |hestcetcomp|tronecomp:inst1|hsestcomp1:inst|voscomp1:inst1|cetcomp1:inst|comparator1:inst|inst14~27     ; combout          ;
+; |hestcetcomp|tronecomp:inst1|hsestcomp1:inst|voscomp1:inst1|cetcomp1:inst1|comparator1:inst|inst14~27    ; |hestcetcomp|tronecomp:inst1|hsestcomp1:inst|voscomp1:inst1|cetcomp1:inst1|comparator1:inst|inst14~27    ; combout          ;
+; |hestcetcomp|tronecomp1:inst|hsestcomp1:inst|voscomp1:inst|cetcomp1:inst|comparator1:inst|inst14~27      ; |hestcetcomp|tronecomp1:inst|hsestcomp1:inst|voscomp1:inst|cetcomp1:inst|comparator1:inst|inst14~27      ; combout          ;
+; |hestcetcomp|tronecomp1:inst|hsestcomp1:inst|voscomp1:inst|cetcomp1:inst1|comparator1:inst|inst14~27     ; |hestcetcomp|tronecomp1:inst|hsestcomp1:inst|voscomp1:inst|cetcomp1:inst1|comparator1:inst|inst14~27     ; combout          ;
+; |hestcetcomp|tronecomp1:inst|hsestcomp1:inst|voscomp1:inst1|cetcomp1:inst|comparator1:inst|inst14~27     ; |hestcetcomp|tronecomp1:inst|hsestcomp1:inst|voscomp1:inst1|cetcomp1:inst|comparator1:inst|inst14~27     ; combout          ;
+; |hestcetcomp|tronecomp1:inst|hsestcomp1:inst|voscomp1:inst1|cetcomp1:inst1|comparator1:inst|inst14~27    ; |hestcetcomp|tronecomp1:inst|hsestcomp1:inst|voscomp1:inst1|cetcomp1:inst1|comparator1:inst|inst14~27    ; combout          ;
+; |hestcetcomp|tronecomp1:inst|hsestcomp1:inst1|voscomp1:inst|cetcomp1:inst|comparator1:inst|inst14~27     ; |hestcetcomp|tronecomp1:inst|hsestcomp1:inst1|voscomp1:inst|cetcomp1:inst|comparator1:inst|inst14~27     ; combout          ;
+; |hestcetcomp|tronecomp1:inst|hsestcomp1:inst1|voscomp1:inst|cetcomp1:inst1|comparator1:inst|inst14~27    ; |hestcetcomp|tronecomp1:inst|hsestcomp1:inst1|voscomp1:inst|cetcomp1:inst1|comparator1:inst|inst14~27    ; combout          ;
+; |hestcetcomp|tronecomp1:inst|hsestcomp1:inst1|voscomp1:inst1|cetcomp1:inst|comparator1:inst|inst14~27    ; |hestcetcomp|tronecomp1:inst|hsestcomp1:inst1|voscomp1:inst1|cetcomp1:inst|comparator1:inst|inst14~27    ; combout          ;
+; |hestcetcomp|tronecomp1:inst|hsestcomp1:inst1|voscomp1:inst1|cetcomp1:inst1|comparator1:inst|inst14~27   ; |hestcetcomp|tronecomp1:inst|hsestcomp1:inst1|voscomp1:inst1|cetcomp1:inst1|comparator1:inst|inst14~27   ; combout          ;
+; |hestcetcomp|tronecomp1:inst|hsestcomp1:inst1|voscomp1:inst1|cetcomp1:inst1|comparator1:inst2|inst14~48  ; |hestcetcomp|tronecomp1:inst|hsestcomp1:inst1|voscomp1:inst1|cetcomp1:inst1|comparator1:inst2|inst14~48  ; combout          ;
+; |hestcetcomp|tronecomp1:inst|hsestcomp1:inst1|voscomp1:inst1|cetcomp1:inst1|comparator1:inst|inst13~26   ; |hestcetcomp|tronecomp1:inst|hsestcomp1:inst1|voscomp1:inst1|cetcomp1:inst1|comparator1:inst|inst13~26   ; combout          ;
+; |hestcetcomp|tronecomp1:inst|hsestcomp1:inst1|voscomp1:inst1|cetcomp1:inst|comparator1:inst|inst13~26    ; |hestcetcomp|tronecomp1:inst|hsestcomp1:inst1|voscomp1:inst1|cetcomp1:inst|comparator1:inst|inst13~26    ; combout          ;
+; |hestcetcomp|tronecomp1:inst|hsestcomp1:inst1|voscomp1:inst|cetcomp1:inst|comparator1:inst|inst13~26     ; |hestcetcomp|tronecomp1:inst|hsestcomp1:inst1|voscomp1:inst|cetcomp1:inst|comparator1:inst|inst13~26     ; combout          ;
+; |hestcetcomp|tronecomp1:inst|hsestcomp1:inst|voscomp1:inst|cetcomp1:inst1|comparator1:inst|inst13~26     ; |hestcetcomp|tronecomp1:inst|hsestcomp1:inst|voscomp1:inst|cetcomp1:inst1|comparator1:inst|inst13~26     ; combout          ;
+; |hestcetcomp|tronecomp1:inst|hsestcomp1:inst|voscomp1:inst|cetcomp1:inst|comparator1:inst|inst13~26      ; |hestcetcomp|tronecomp1:inst|hsestcomp1:inst|voscomp1:inst|cetcomp1:inst|comparator1:inst|inst13~26      ; combout          ;
+; |hestcetcomp|tronecomp:inst1|hsestcomp1:inst|voscomp1:inst1|cetcomp1:inst1|comparator1:inst|inst13~26    ; |hestcetcomp|tronecomp:inst1|hsestcomp1:inst|voscomp1:inst1|cetcomp1:inst1|comparator1:inst|inst13~26    ; combout          ;
+; |hestcetcomp|tronecomp:inst1|hsestcomp1:inst|voscomp1:inst1|cetcomp1:inst|comparator1:inst|inst13~26     ; |hestcetcomp|tronecomp:inst1|hsestcomp1:inst|voscomp1:inst1|cetcomp1:inst|comparator1:inst|inst13~26     ; combout          ;
+; |hestcetcomp|tronecomp:inst1|hsestcomp1:inst|voscomp1:inst|cetcomp1:inst1|comparator1:inst|inst13~26     ; |hestcetcomp|tronecomp:inst1|hsestcomp1:inst|voscomp1:inst|cetcomp1:inst1|comparator1:inst|inst13~26     ; combout          ;
+; |hestcetcomp|tronecomp:inst1|hsestcomp1:inst|voscomp1:inst|cetcomp1:inst|comparator1:inst|inst13~607     ; |hestcetcomp|tronecomp:inst1|hsestcomp1:inst|voscomp1:inst|cetcomp1:inst|comparator1:inst|inst13~607     ; combout          ;
+; |hestcetcomp|tronecomp:inst1|hsestcomp1:inst|voscomp1:inst|cetcomp1:inst|comparator1:inst|inst13~608     ; |hestcetcomp|tronecomp:inst1|hsestcomp1:inst|voscomp1:inst|cetcomp1:inst|comparator1:inst|inst13~608     ; combout          ;
+; |hestcetcomp|tronecomp:inst1|hsestcomp1:inst|voscomp1:inst|cetcomp1:inst|comparator1:inst|inst13~609     ; |hestcetcomp|tronecomp:inst1|hsestcomp1:inst|voscomp1:inst|cetcomp1:inst|comparator1:inst|inst13~609     ; combout          ;
+; |hestcetcomp|tronecomp:inst1|hsestcomp1:inst|voscomp1:inst|cetcomp1:inst|comparator1:inst|inst13~610     ; |hestcetcomp|tronecomp:inst1|hsestcomp1:inst|voscomp1:inst|cetcomp1:inst|comparator1:inst|inst13~610     ; combout          ;
+; |hestcetcomp|tronecomp:inst1|hsestcomp1:inst|voscomp1:inst|cetcomp1:inst|comparator1:inst|inst13~611     ; |hestcetcomp|tronecomp:inst1|hsestcomp1:inst|voscomp1:inst|cetcomp1:inst|comparator1:inst|inst13~611     ; combout          ;
+; |hestcetcomp|tronecomp:inst1|hsestcomp1:inst|voscomp1:inst|cetcomp1:inst|comparator1:inst|inst13~612     ; |hestcetcomp|tronecomp:inst1|hsestcomp1:inst|voscomp1:inst|cetcomp1:inst|comparator1:inst|inst13~612     ; combout          ;
+; |hestcetcomp|tronecomp:inst1|hsestcomp1:inst|voscomp1:inst|cetcomp1:inst1|comparator1:inst|inst13~27     ; |hestcetcomp|tronecomp:inst1|hsestcomp1:inst|voscomp1:inst|cetcomp1:inst1|comparator1:inst|inst13~27     ; combout          ;
+; |hestcetcomp|tronecomp:inst1|hsestcomp1:inst|voscomp1:inst1|cetcomp1:inst|comparator1:inst|inst13~27     ; |hestcetcomp|tronecomp:inst1|hsestcomp1:inst|voscomp1:inst1|cetcomp1:inst|comparator1:inst|inst13~27     ; combout          ;
+; |hestcetcomp|tronecomp:inst1|hsestcomp1:inst|voscomp1:inst1|cetcomp1:inst1|comparator1:inst|inst13~27    ; |hestcetcomp|tronecomp:inst1|hsestcomp1:inst|voscomp1:inst1|cetcomp1:inst1|comparator1:inst|inst13~27    ; combout          ;
+; |hestcetcomp|tronecomp1:inst|hsestcomp1:inst|voscomp1:inst|cetcomp1:inst|comparator1:inst|inst13~27      ; |hestcetcomp|tronecomp1:inst|hsestcomp1:inst|voscomp1:inst|cetcomp1:inst|comparator1:inst|inst13~27      ; combout          ;
+; |hestcetcomp|tronecomp1:inst|hsestcomp1:inst|voscomp1:inst|cetcomp1:inst1|comparator1:inst|inst13~27     ; |hestcetcomp|tronecomp1:inst|hsestcomp1:inst|voscomp1:inst|cetcomp1:inst1|comparator1:inst|inst13~27     ; combout          ;
+; |hestcetcomp|tronecomp1:inst|hsestcomp1:inst|voscomp1:inst1|cetcomp1:inst|comparator1:inst|inst13~27     ; |hestcetcomp|tronecomp1:inst|hsestcomp1:inst|voscomp1:inst1|cetcomp1:inst|comparator1:inst|inst13~27     ; combout          ;
+; |hestcetcomp|tronecomp1:inst|hsestcomp1:inst|voscomp1:inst1|cetcomp1:inst1|comparator1:inst|inst13~27    ; |hestcetcomp|tronecomp1:inst|hsestcomp1:inst|voscomp1:inst1|cetcomp1:inst1|comparator1:inst|inst13~27    ; combout          ;
+; |hestcetcomp|tronecomp1:inst|hsestcomp1:inst1|voscomp1:inst|cetcomp1:inst|comparator1:inst|inst13~27     ; |hestcetcomp|tronecomp1:inst|hsestcomp1:inst1|voscomp1:inst|cetcomp1:inst|comparator1:inst|inst13~27     ; combout          ;
+; |hestcetcomp|tronecomp1:inst|hsestcomp1:inst1|voscomp1:inst|cetcomp1:inst1|comparator1:inst|inst13~27    ; |hestcetcomp|tronecomp1:inst|hsestcomp1:inst1|voscomp1:inst|cetcomp1:inst1|comparator1:inst|inst13~27    ; combout          ;
+; |hestcetcomp|tronecomp1:inst|hsestcomp1:inst1|voscomp1:inst1|cetcomp1:inst|comparator1:inst|inst13~27    ; |hestcetcomp|tronecomp1:inst|hsestcomp1:inst1|voscomp1:inst1|cetcomp1:inst|comparator1:inst|inst13~27    ; combout          ;
+; |hestcetcomp|tronecomp1:inst|hsestcomp1:inst1|voscomp1:inst1|cetcomp1:inst1|comparator1:inst|inst13~27   ; |hestcetcomp|tronecomp1:inst|hsestcomp1:inst1|voscomp1:inst1|cetcomp1:inst1|comparator1:inst|inst13~27   ; combout          ;
+; |hestcetcomp|tronecomp1:inst|hsestcomp1:inst1|voscomp1:inst1|cetcomp1:inst1|comparator1:inst2|inst13~48  ; |hestcetcomp|tronecomp1:inst|hsestcomp1:inst1|voscomp1:inst1|cetcomp1:inst1|comparator1:inst2|inst13~48  ; combout          ;
+; |hestcetcomp|tronecomp:inst1|hsestcomp1:inst|voscomp1:inst|cetcomp1:inst|comparator1:inst|inst14~658     ; |hestcetcomp|tronecomp:inst1|hsestcomp1:inst|voscomp1:inst|cetcomp1:inst|comparator1:inst|inst14~658     ; combout          ;
+; |hestcetcomp|tronecomp:inst1|hsestcomp1:inst|voscomp1:inst|cetcomp1:inst|comparator1:inst|inst14~659     ; |hestcetcomp|tronecomp:inst1|hsestcomp1:inst|voscomp1:inst|cetcomp1:inst|comparator1:inst|inst14~659     ; combout          ;
+; |hestcetcomp|tronecomp:inst1|hsestcomp1:inst|voscomp1:inst|cetcomp1:inst|comparator1:inst|inst14~660     ; |hestcetcomp|tronecomp:inst1|hsestcomp1:inst|voscomp1:inst|cetcomp1:inst|comparator1:inst|inst14~660     ; combout          ;
+; |hestcetcomp|tronecomp:inst1|hsestcomp1:inst|voscomp1:inst|cetcomp1:inst|comparator1:inst|inst13~614     ; |hestcetcomp|tronecomp:inst1|hsestcomp1:inst|voscomp1:inst|cetcomp1:inst|comparator1:inst|inst13~614     ; combout          ;
+; |hestcetcomp|tronecomp1:inst|hsestcomp1:inst1|voscomp1:inst1|cetcomp1:inst1|comparator1:inst2|inst12~219 ; |hestcetcomp|tronecomp1:inst|hsestcomp1:inst1|voscomp1:inst1|cetcomp1:inst1|comparator1:inst2|inst12~219 ; combout          ;
+; |hestcetcomp|tronecomp1:inst|hsestcomp1:inst1|voscomp1:inst1|cetcomp1:inst1|comparator1:inst2|inst12~220 ; |hestcetcomp|tronecomp1:inst|hsestcomp1:inst1|voscomp1:inst1|cetcomp1:inst1|comparator1:inst2|inst12~220 ; combout          ;
+; |hestcetcomp|tronecomp:inst1|hsestcomp1:inst|voscomp1:inst|cetcomp1:inst|comparator1:inst|inst14~661     ; |hestcetcomp|tronecomp:inst1|hsestcomp1:inst|voscomp1:inst|cetcomp1:inst|comparator1:inst|inst14~661     ; combout          ;
+; |hestcetcomp|tronecomp1:inst|hsestcomp1:inst1|voscomp1:inst1|cetcomp1:inst1|comparator1:inst2|inst12~221 ; |hestcetcomp|tronecomp1:inst|hsestcomp1:inst1|voscomp1:inst1|cetcomp1:inst1|comparator1:inst2|inst12~221 ; combout          ;
+; |hestcetcomp|xmy                                                                                         ; |hestcetcomp|xmy                                                                                         ; padio            ;
+; |hestcetcomp|xly                                                                                         ; |hestcetcomp|xly                                                                                         ; padio            ;
+; |hestcetcomp|xey                                                                                         ; |hestcetcomp|xey                                                                                         ; padio            ;
+; |hestcetcomp|x[42]                                                                                       ; |hestcetcomp|x[42]~corein                                                                                ; combout          ;
+; |hestcetcomp|y[42]                                                                                       ; |hestcetcomp|y[42]~corein                                                                                ; combout          ;
+; |hestcetcomp|x[40]                                                                                       ; |hestcetcomp|x[40]~corein                                                                                ; combout          ;
+; |hestcetcomp|y[40]                                                                                       ; |hestcetcomp|y[40]~corein                                                                                ; combout          ;
+; |hestcetcomp|y[41]                                                                                       ; |hestcetcomp|y[41]~corein                                                                                ; combout          ;
+; |hestcetcomp|x[41]                                                                                       ; |hestcetcomp|x[41]~corein                                                                                ; combout          ;
+; |hestcetcomp|y[36]                                                                                       ; |hestcetcomp|y[36]~corein                                                                                ; combout          ;
+; |hestcetcomp|x[36]                                                                                       ; |hestcetcomp|x[36]~corein                                                                                ; combout          ;
+; |hestcetcomp|x[37]                                                                                       ; |hestcetcomp|x[37]~corein                                                                                ; combout          ;
+; |hestcetcomp|y[37]                                                                                       ; |hestcetcomp|y[37]~corein                                                                                ; combout          ;
+; |hestcetcomp|x[35]                                                                                       ; |hestcetcomp|x[35]~corein                                                                                ; combout          ;
+; |hestcetcomp|y[34]                                                                                       ; |hestcetcomp|y[34]~corein                                                                                ; combout          ;
+; |hestcetcomp|y[39]                                                                                       ; |hestcetcomp|y[39]~corein                                                                                ; combout          ;
+; |hestcetcomp|y[38]                                                                                       ; |hestcetcomp|y[38]~corein                                                                                ; combout          ;
+; |hestcetcomp|y[52]                                                                                       ; |hestcetcomp|y[52]~corein                                                                                ; combout          ;
+; |hestcetcomp|x[52]                                                                                       ; |hestcetcomp|x[52]~corein                                                                                ; combout          ;
+; |hestcetcomp|x[53]                                                                                       ; |hestcetcomp|x[53]~corein                                                                                ; combout          ;
+; |hestcetcomp|x[32]                                                                                       ; |hestcetcomp|x[32]~corein                                                                                ; combout          ;
+; |hestcetcomp|x[33]                                                                                       ; |hestcetcomp|x[33]~corein                                                                                ; combout          ;
+; |hestcetcomp|y[51]                                                                                       ; |hestcetcomp|y[51]~corein                                                                                ; combout          ;
+; |hestcetcomp|y[50]                                                                                       ; |hestcetcomp|y[50]~corein                                                                                ; combout          ;
+; |hestcetcomp|y[55]                                                                                       ; |hestcetcomp|y[55]~corein                                                                                ; combout          ;
+; |hestcetcomp|y[54]                                                                                       ; |hestcetcomp|y[54]~corein                                                                                ; combout          ;
+; |hestcetcomp|y[59]                                                                                       ; |hestcetcomp|y[59]~corein                                                                                ; combout          ;
+; |hestcetcomp|x[59]                                                                                       ; |hestcetcomp|x[59]~corein                                                                                ; combout          ;
+; |hestcetcomp|y[58]                                                                                       ; |hestcetcomp|y[58]~corein                                                                                ; combout          ;
+; |hestcetcomp|y[60]                                                                                       ; |hestcetcomp|y[60]~corein                                                                                ; combout          ;
+; |hestcetcomp|x[60]                                                                                       ; |hestcetcomp|x[60]~corein                                                                                ; combout          ;
+; |hestcetcomp|x[61]                                                                                       ; |hestcetcomp|x[61]~corein                                                                                ; combout          ;
+; |hestcetcomp|y[61]                                                                                       ; |hestcetcomp|y[61]~corein                                                                                ; combout          ;
+; |hestcetcomp|y[56]                                                                                       ; |hestcetcomp|y[56]~corein                                                                                ; combout          ;
+; |hestcetcomp|y[57]                                                                                       ; |hestcetcomp|y[57]~corein                                                                                ; combout          ;
+; |hestcetcomp|y[11]                                                                                       ; |hestcetcomp|y[11]~corein                                                                                ; combout          ;
+; |hestcetcomp|x[11]                                                                                       ; |hestcetcomp|x[11]~corein                                                                                ; combout          ;
+; |hestcetcomp|x[10]                                                                                       ; |hestcetcomp|x[10]~corein                                                                                ; combout          ;
+; |hestcetcomp|y[10]                                                                                       ; |hestcetcomp|y[10]~corein                                                                                ; combout          ;
+; |hestcetcomp|x[63]                                                                                       ; |hestcetcomp|x[63]~corein                                                                                ; combout          ;
+; |hestcetcomp|y[63]                                                                                       ; |hestcetcomp|y[63]~corein                                                                                ; combout          ;
+; |hestcetcomp|y[62]                                                                                       ; |hestcetcomp|y[62]~corein                                                                                ; combout          ;
+; |hestcetcomp|x[62]                                                                                       ; |hestcetcomp|x[62]~corein                                                                                ; combout          ;
+; |hestcetcomp|y[12]                                                                                       ; |hestcetcomp|y[12]~corein                                                                                ; combout          ;
+; |hestcetcomp|x[12]                                                                                       ; |hestcetcomp|x[12]~corein                                                                                ; combout          ;
+; |hestcetcomp|x[13]                                                                                       ; |hestcetcomp|x[13]~corein                                                                                ; combout          ;
+; |hestcetcomp|y[13]                                                                                       ; |hestcetcomp|y[13]~corein                                                                                ; combout          ;
+; |hestcetcomp|x[8]                                                                                        ; |hestcetcomp|x[8]~corein                                                                                 ; combout          ;
+; |hestcetcomp|y[8]                                                                                        ; |hestcetcomp|y[8]~corein                                                                                 ; combout          ;
+; |hestcetcomp|y[9]                                                                                        ; |hestcetcomp|y[9]~corein                                                                                 ; combout          ;
+; |hestcetcomp|x[9]                                                                                        ; |hestcetcomp|x[9]~corein                                                                                 ; combout          ;
+; |hestcetcomp|y[4]                                                                                        ; |hestcetcomp|y[4]~corein                                                                                 ; combout          ;
+; |hestcetcomp|x[4]                                                                                        ; |hestcetcomp|x[4]~corein                                                                                 ; combout          ;
+; |hestcetcomp|x[5]                                                                                        ; |hestcetcomp|x[5]~corein                                                                                 ; combout          ;
+; |hestcetcomp|y[5]                                                                                        ; |hestcetcomp|y[5]~corein                                                                                 ; combout          ;
+; |hestcetcomp|x[15]                                                                                       ; |hestcetcomp|x[15]~corein                                                                                ; combout          ;
+; |hestcetcomp|y[15]                                                                                       ; |hestcetcomp|y[15]~corein                                                                                ; combout          ;
+; |hestcetcomp|y[14]                                                                                       ; |hestcetcomp|y[14]~corein                                                                                ; combout          ;
+; |hestcetcomp|x[14]                                                                                       ; |hestcetcomp|x[14]~corein                                                                                ; combout          ;
+; |hestcetcomp|y[3]                                                                                        ; |hestcetcomp|y[3]~corein                                                                                 ; combout          ;
+; |hestcetcomp|x[3]                                                                                        ; |hestcetcomp|x[3]~corein                                                                                 ; combout          ;
+; |hestcetcomp|x[2]                                                                                        ; |hestcetcomp|x[2]~corein                                                                                 ; combout          ;
+; |hestcetcomp|y[2]                                                                                        ; |hestcetcomp|y[2]~corein                                                                                 ; combout          ;
+; |hestcetcomp|x[7]                                                                                        ; |hestcetcomp|x[7]~corein                                                                                 ; combout          ;
+; |hestcetcomp|y[7]                                                                                        ; |hestcetcomp|y[7]~corein                                                                                 ; combout          ;
+; |hestcetcomp|y[6]                                                                                        ; |hestcetcomp|y[6]~corein                                                                                 ; combout          ;
+; |hestcetcomp|x[6]                                                                                        ; |hestcetcomp|x[6]~corein                                                                                 ; combout          ;
+; |hestcetcomp|y[23]                                                                                       ; |hestcetcomp|y[23]~corein                                                                                ; combout          ;
+; |hestcetcomp|y[22]                                                                                       ; |hestcetcomp|y[22]~corein                                                                                ; combout          ;
+; |hestcetcomp|x[0]                                                                                        ; |hestcetcomp|x[0]~corein                                                                                 ; combout          ;
+; |hestcetcomp|y[0]                                                                                        ; |hestcetcomp|y[0]~corein                                                                                 ; combout          ;
+; |hestcetcomp|y[1]                                                                                        ; |hestcetcomp|y[1]~corein                                                                                 ; combout          ;
+; |hestcetcomp|x[1]                                                                                        ; |hestcetcomp|x[1]~corein                                                                                 ; combout          ;
+; |hestcetcomp|y[21]                                                                                       ; |hestcetcomp|y[21]~corein                                                                                ; combout          ;
+; |hestcetcomp|y[20]                                                                                       ; |hestcetcomp|y[20]~corein                                                                                ; combout          ;
+; |hestcetcomp|x[18]                                                                                       ; |hestcetcomp|x[18]~corein                                                                                ; combout          ;
+; |hestcetcomp|y[18]                                                                                       ; |hestcetcomp|y[18]~corein                                                                                ; combout          ;
+; |hestcetcomp|y[19]                                                                                       ; |hestcetcomp|y[19]~corein                                                                                ; combout          ;
+; |hestcetcomp|x[16]                                                                                       ; |hestcetcomp|x[16]~corein                                                                                ; combout          ;
+; |hestcetcomp|y[16]                                                                                       ; |hestcetcomp|y[16]~corein                                                                                ; combout          ;
+; |hestcetcomp|y[17]                                                                                       ; |hestcetcomp|y[17]~corein                                                                                ; combout          ;
+; |hestcetcomp|x[17]                                                                                       ; |hestcetcomp|x[17]~corein                                                                                ; combout          ;
+; |hestcetcomp|y[27]                                                                                       ; |hestcetcomp|y[27]~corein                                                                                ; combout          ;
+; |hestcetcomp|x[27]                                                                                       ; |hestcetcomp|x[27]~corein                                                                                ; combout          ;
+; |hestcetcomp|x[26]                                                                                       ; |hestcetcomp|x[26]~corein                                                                                ; combout          ;
+; |hestcetcomp|y[26]                                                                                       ; |hestcetcomp|y[26]~corein                                                                                ; combout          ;
+; |hestcetcomp|y[24]                                                                                       ; |hestcetcomp|y[24]~corein                                                                                ; combout          ;
+; |hestcetcomp|y[25]                                                                                       ; |hestcetcomp|y[25]~corein                                                                                ; combout          ;
+; |hestcetcomp|x[25]                                                                                       ; |hestcetcomp|x[25]~corein                                                                                ; combout          ;
+; |hestcetcomp|x[29]                                                                                       ; |hestcetcomp|x[29]~corein                                                                                ; combout          ;
+; |hestcetcomp|y[28]                                                                                       ; |hestcetcomp|y[28]~corein                                                                                ; combout          ;
+; |hestcetcomp|x[28]                                                                                       ; |hestcetcomp|x[28]~corein                                                                                ; combout          ;
+; |hestcetcomp|x[31]                                                                                       ; |hestcetcomp|x[31]~corein                                                                                ; combout          ;
+; |hestcetcomp|x[30]                                                                                       ; |hestcetcomp|x[30]~corein                                                                                ; combout          ;
++----------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 1 during simulation.
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Missing 1-Value Coverage                                                                                                                                                                                                           ;
++--------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------+------------------+
+; Node Name                                                                                              ; Output Port Name                                                                                       ; Output Port Type ;
++--------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------+------------------+
+; |hestcetcomp|tronecomp1:inst|hsestcomp1:inst1|voscomp1:inst1|cetcomp1:inst1|comparator1:inst|inst14~26 ; |hestcetcomp|tronecomp1:inst|hsestcomp1:inst1|voscomp1:inst1|cetcomp1:inst1|comparator1:inst|inst14~26 ; combout          ;
+; |hestcetcomp|tronecomp1:inst|hsestcomp1:inst1|voscomp1:inst|cetcomp1:inst|comparator1:inst|inst14~26   ; |hestcetcomp|tronecomp1:inst|hsestcomp1:inst1|voscomp1:inst|cetcomp1:inst|comparator1:inst|inst14~26   ; combout          ;
+; |hestcetcomp|tronecomp:inst1|hsestcomp1:inst|voscomp1:inst|cetcomp1:inst|comparator1:inst|inst14~650   ; |hestcetcomp|tronecomp:inst1|hsestcomp1:inst|voscomp1:inst|cetcomp1:inst|comparator1:inst|inst14~650   ; combout          ;
+; |hestcetcomp|tronecomp:inst1|hsestcomp1:inst|voscomp1:inst|cetcomp1:inst|comparator1:inst|inst14~651   ; |hestcetcomp|tronecomp:inst1|hsestcomp1:inst|voscomp1:inst|cetcomp1:inst|comparator1:inst|inst14~651   ; combout          ;
+; |hestcetcomp|tronecomp:inst1|hsestcomp1:inst|voscomp1:inst|cetcomp1:inst|comparator1:inst|inst14~656   ; |hestcetcomp|tronecomp:inst1|hsestcomp1:inst|voscomp1:inst|cetcomp1:inst|comparator1:inst|inst14~656   ; combout          ;
+; |hestcetcomp|tronecomp1:inst|hsestcomp1:inst1|voscomp1:inst|cetcomp1:inst1|comparator1:inst|inst13~26  ; |hestcetcomp|tronecomp1:inst|hsestcomp1:inst1|voscomp1:inst|cetcomp1:inst1|comparator1:inst|inst13~26  ; combout          ;
+; |hestcetcomp|tronecomp1:inst|hsestcomp1:inst|voscomp1:inst1|cetcomp1:inst1|comparator1:inst|inst13~26  ; |hestcetcomp|tronecomp1:inst|hsestcomp1:inst|voscomp1:inst1|cetcomp1:inst1|comparator1:inst|inst13~26  ; combout          ;
+; |hestcetcomp|tronecomp1:inst|hsestcomp1:inst|voscomp1:inst1|cetcomp1:inst|comparator1:inst|inst13~26   ; |hestcetcomp|tronecomp1:inst|hsestcomp1:inst|voscomp1:inst1|cetcomp1:inst|comparator1:inst|inst13~26   ; combout          ;
+; |hestcetcomp|tronecomp:inst1|hsestcomp1:inst|voscomp1:inst|cetcomp1:inst|comparator1:inst|inst13~605   ; |hestcetcomp|tronecomp:inst1|hsestcomp1:inst|voscomp1:inst|cetcomp1:inst|comparator1:inst|inst13~605   ; combout          ;
+; |hestcetcomp|tronecomp:inst1|hsestcomp1:inst|voscomp1:inst|cetcomp1:inst|comparator1:inst|inst13~606   ; |hestcetcomp|tronecomp:inst1|hsestcomp1:inst|voscomp1:inst|cetcomp1:inst|comparator1:inst|inst13~606   ; combout          ;
+; |hestcetcomp|tronecomp:inst1|hsestcomp1:inst|voscomp1:inst|cetcomp1:inst|comparator1:inst|inst13~613   ; |hestcetcomp|tronecomp:inst1|hsestcomp1:inst|voscomp1:inst|cetcomp1:inst|comparator1:inst|inst13~613   ; combout          ;
+; |hestcetcomp|tronecomp:inst1|hsestcomp1:inst|voscomp1:inst|cetcomp1:inst|comparator1:inst|inst13~615   ; |hestcetcomp|tronecomp:inst1|hsestcomp1:inst|voscomp1:inst|cetcomp1:inst|comparator1:inst|inst13~615   ; combout          ;
+; |hestcetcomp|y[43]                                                                                     ; |hestcetcomp|y[43]~corein                                                                              ; combout          ;
+; |hestcetcomp|x[43]                                                                                     ; |hestcetcomp|x[43]~corein                                                                              ; combout          ;
+; |hestcetcomp|y[44]                                                                                     ; |hestcetcomp|y[44]~corein                                                                              ; combout          ;
+; |hestcetcomp|x[44]                                                                                     ; |hestcetcomp|x[44]~corein                                                                              ; combout          ;
+; |hestcetcomp|x[45]                                                                                     ; |hestcetcomp|x[45]~corein                                                                              ; combout          ;
+; |hestcetcomp|y[45]                                                                                     ; |hestcetcomp|y[45]~corein                                                                              ; combout          ;
+; |hestcetcomp|x[47]                                                                                     ; |hestcetcomp|x[47]~corein                                                                              ; combout          ;
+; |hestcetcomp|y[47]                                                                                     ; |hestcetcomp|y[47]~corein                                                                              ; combout          ;
+; |hestcetcomp|y[46]                                                                                     ; |hestcetcomp|y[46]~corein                                                                              ; combout          ;
+; |hestcetcomp|x[46]                                                                                     ; |hestcetcomp|x[46]~corein                                                                              ; combout          ;
+; |hestcetcomp|y[35]                                                                                     ; |hestcetcomp|y[35]~corein                                                                              ; combout          ;
+; |hestcetcomp|x[34]                                                                                     ; |hestcetcomp|x[34]~corein                                                                              ; combout          ;
+; |hestcetcomp|x[39]                                                                                     ; |hestcetcomp|x[39]~corein                                                                              ; combout          ;
+; |hestcetcomp|x[38]                                                                                     ; |hestcetcomp|x[38]~corein                                                                              ; combout          ;
+; |hestcetcomp|y[53]                                                                                     ; |hestcetcomp|y[53]~corein                                                                              ; combout          ;
+; |hestcetcomp|y[32]                                                                                     ; |hestcetcomp|y[32]~corein                                                                              ; combout          ;
+; |hestcetcomp|y[33]                                                                                     ; |hestcetcomp|y[33]~corein                                                                              ; combout          ;
+; |hestcetcomp|x[51]                                                                                     ; |hestcetcomp|x[51]~corein                                                                              ; combout          ;
+; |hestcetcomp|x[50]                                                                                     ; |hestcetcomp|x[50]~corein                                                                              ; combout          ;
+; |hestcetcomp|x[55]                                                                                     ; |hestcetcomp|x[55]~corein                                                                              ; combout          ;
+; |hestcetcomp|x[54]                                                                                     ; |hestcetcomp|x[54]~corein                                                                              ; combout          ;
+; |hestcetcomp|x[58]                                                                                     ; |hestcetcomp|x[58]~corein                                                                              ; combout          ;
+; |hestcetcomp|x[48]                                                                                     ; |hestcetcomp|x[48]~corein                                                                              ; combout          ;
+; |hestcetcomp|y[48]                                                                                     ; |hestcetcomp|y[48]~corein                                                                              ; combout          ;
+; |hestcetcomp|y[49]                                                                                     ; |hestcetcomp|y[49]~corein                                                                              ; combout          ;
+; |hestcetcomp|x[49]                                                                                     ; |hestcetcomp|x[49]~corein                                                                              ; combout          ;
+; |hestcetcomp|x[56]                                                                                     ; |hestcetcomp|x[56]~corein                                                                              ; combout          ;
+; |hestcetcomp|x[57]                                                                                     ; |hestcetcomp|x[57]~corein                                                                              ; combout          ;
+; |hestcetcomp|x[23]                                                                                     ; |hestcetcomp|x[23]~corein                                                                              ; combout          ;
+; |hestcetcomp|x[22]                                                                                     ; |hestcetcomp|x[22]~corein                                                                              ; combout          ;
+; |hestcetcomp|x[21]                                                                                     ; |hestcetcomp|x[21]~corein                                                                              ; combout          ;
+; |hestcetcomp|x[20]                                                                                     ; |hestcetcomp|x[20]~corein                                                                              ; combout          ;
+; |hestcetcomp|x[19]                                                                                     ; |hestcetcomp|x[19]~corein                                                                              ; combout          ;
+; |hestcetcomp|x[24]                                                                                     ; |hestcetcomp|x[24]~corein                                                                              ; combout          ;
+; |hestcetcomp|y[29]                                                                                     ; |hestcetcomp|y[29]~corein                                                                              ; combout          ;
+; |hestcetcomp|y[31]                                                                                     ; |hestcetcomp|y[31]~corein                                                                              ; combout          ;
+; |hestcetcomp|y[30]                                                                                     ; |hestcetcomp|y[30]~corein                                                                              ; combout          ;
++--------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 0 during simulation.
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Missing 0-Value Coverage                                                                                                                                                                                                           ;
++--------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------+------------------+
+; Node Name                                                                                              ; Output Port Name                                                                                       ; Output Port Type ;
++--------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------+------------------+
+; |hestcetcomp|tronecomp1:inst|hsestcomp1:inst1|voscomp1:inst1|cetcomp1:inst1|comparator1:inst|inst14~26 ; |hestcetcomp|tronecomp1:inst|hsestcomp1:inst1|voscomp1:inst1|cetcomp1:inst1|comparator1:inst|inst14~26 ; combout          ;
+; |hestcetcomp|tronecomp1:inst|hsestcomp1:inst1|voscomp1:inst|cetcomp1:inst|comparator1:inst|inst14~26   ; |hestcetcomp|tronecomp1:inst|hsestcomp1:inst1|voscomp1:inst|cetcomp1:inst|comparator1:inst|inst14~26   ; combout          ;
+; |hestcetcomp|tronecomp:inst1|hsestcomp1:inst|voscomp1:inst|cetcomp1:inst|comparator1:inst|inst14~650   ; |hestcetcomp|tronecomp:inst1|hsestcomp1:inst|voscomp1:inst|cetcomp1:inst|comparator1:inst|inst14~650   ; combout          ;
+; |hestcetcomp|tronecomp:inst1|hsestcomp1:inst|voscomp1:inst|cetcomp1:inst|comparator1:inst|inst14~651   ; |hestcetcomp|tronecomp:inst1|hsestcomp1:inst|voscomp1:inst|cetcomp1:inst|comparator1:inst|inst14~651   ; combout          ;
+; |hestcetcomp|tronecomp:inst1|hsestcomp1:inst|voscomp1:inst|cetcomp1:inst|comparator1:inst|inst14~656   ; |hestcetcomp|tronecomp:inst1|hsestcomp1:inst|voscomp1:inst|cetcomp1:inst|comparator1:inst|inst14~656   ; combout          ;
+; |hestcetcomp|tronecomp1:inst|hsestcomp1:inst1|voscomp1:inst|cetcomp1:inst1|comparator1:inst|inst13~26  ; |hestcetcomp|tronecomp1:inst|hsestcomp1:inst1|voscomp1:inst|cetcomp1:inst1|comparator1:inst|inst13~26  ; combout          ;
+; |hestcetcomp|tronecomp1:inst|hsestcomp1:inst|voscomp1:inst1|cetcomp1:inst1|comparator1:inst|inst13~26  ; |hestcetcomp|tronecomp1:inst|hsestcomp1:inst|voscomp1:inst1|cetcomp1:inst1|comparator1:inst|inst13~26  ; combout          ;
+; |hestcetcomp|tronecomp1:inst|hsestcomp1:inst|voscomp1:inst1|cetcomp1:inst|comparator1:inst|inst13~26   ; |hestcetcomp|tronecomp1:inst|hsestcomp1:inst|voscomp1:inst1|cetcomp1:inst|comparator1:inst|inst13~26   ; combout          ;
+; |hestcetcomp|tronecomp:inst1|hsestcomp1:inst|voscomp1:inst|cetcomp1:inst|comparator1:inst|inst13~605   ; |hestcetcomp|tronecomp:inst1|hsestcomp1:inst|voscomp1:inst|cetcomp1:inst|comparator1:inst|inst13~605   ; combout          ;
+; |hestcetcomp|tronecomp:inst1|hsestcomp1:inst|voscomp1:inst|cetcomp1:inst|comparator1:inst|inst13~606   ; |hestcetcomp|tronecomp:inst1|hsestcomp1:inst|voscomp1:inst|cetcomp1:inst|comparator1:inst|inst13~606   ; combout          ;
+; |hestcetcomp|tronecomp:inst1|hsestcomp1:inst|voscomp1:inst|cetcomp1:inst|comparator1:inst|inst13~613   ; |hestcetcomp|tronecomp:inst1|hsestcomp1:inst|voscomp1:inst|cetcomp1:inst|comparator1:inst|inst13~613   ; combout          ;
+; |hestcetcomp|tronecomp:inst1|hsestcomp1:inst|voscomp1:inst|cetcomp1:inst|comparator1:inst|inst13~615   ; |hestcetcomp|tronecomp:inst1|hsestcomp1:inst|voscomp1:inst|cetcomp1:inst|comparator1:inst|inst13~615   ; combout          ;
+; |hestcetcomp|y[43]                                                                                     ; |hestcetcomp|y[43]~corein                                                                              ; combout          ;
+; |hestcetcomp|x[43]                                                                                     ; |hestcetcomp|x[43]~corein                                                                              ; combout          ;
+; |hestcetcomp|y[44]                                                                                     ; |hestcetcomp|y[44]~corein                                                                              ; combout          ;
+; |hestcetcomp|x[44]                                                                                     ; |hestcetcomp|x[44]~corein                                                                              ; combout          ;
+; |hestcetcomp|x[45]                                                                                     ; |hestcetcomp|x[45]~corein                                                                              ; combout          ;
+; |hestcetcomp|y[45]                                                                                     ; |hestcetcomp|y[45]~corein                                                                              ; combout          ;
+; |hestcetcomp|x[47]                                                                                     ; |hestcetcomp|x[47]~corein                                                                              ; combout          ;
+; |hestcetcomp|y[47]                                                                                     ; |hestcetcomp|y[47]~corein                                                                              ; combout          ;
+; |hestcetcomp|y[46]                                                                                     ; |hestcetcomp|y[46]~corein                                                                              ; combout          ;
+; |hestcetcomp|x[46]                                                                                     ; |hestcetcomp|x[46]~corein                                                                              ; combout          ;
+; |hestcetcomp|y[35]                                                                                     ; |hestcetcomp|y[35]~corein                                                                              ; combout          ;
+; |hestcetcomp|x[34]                                                                                     ; |hestcetcomp|x[34]~corein                                                                              ; combout          ;
+; |hestcetcomp|x[39]                                                                                     ; |hestcetcomp|x[39]~corein                                                                              ; combout          ;
+; |hestcetcomp|x[38]                                                                                     ; |hestcetcomp|x[38]~corein                                                                              ; combout          ;
+; |hestcetcomp|y[53]                                                                                     ; |hestcetcomp|y[53]~corein                                                                              ; combout          ;
+; |hestcetcomp|y[32]                                                                                     ; |hestcetcomp|y[32]~corein                                                                              ; combout          ;
+; |hestcetcomp|y[33]                                                                                     ; |hestcetcomp|y[33]~corein                                                                              ; combout          ;
+; |hestcetcomp|x[51]                                                                                     ; |hestcetcomp|x[51]~corein                                                                              ; combout          ;
+; |hestcetcomp|x[50]                                                                                     ; |hestcetcomp|x[50]~corein                                                                              ; combout          ;
+; |hestcetcomp|x[55]                                                                                     ; |hestcetcomp|x[55]~corein                                                                              ; combout          ;
+; |hestcetcomp|x[54]                                                                                     ; |hestcetcomp|x[54]~corein                                                                              ; combout          ;
+; |hestcetcomp|x[58]                                                                                     ; |hestcetcomp|x[58]~corein                                                                              ; combout          ;
+; |hestcetcomp|x[48]                                                                                     ; |hestcetcomp|x[48]~corein                                                                              ; combout          ;
+; |hestcetcomp|y[48]                                                                                     ; |hestcetcomp|y[48]~corein                                                                              ; combout          ;
+; |hestcetcomp|y[49]                                                                                     ; |hestcetcomp|y[49]~corein                                                                              ; combout          ;
+; |hestcetcomp|x[49]                                                                                     ; |hestcetcomp|x[49]~corein                                                                              ; combout          ;
+; |hestcetcomp|x[56]                                                                                     ; |hestcetcomp|x[56]~corein                                                                              ; combout          ;
+; |hestcetcomp|x[57]                                                                                     ; |hestcetcomp|x[57]~corein                                                                              ; combout          ;
+; |hestcetcomp|x[23]                                                                                     ; |hestcetcomp|x[23]~corein                                                                              ; combout          ;
+; |hestcetcomp|x[22]                                                                                     ; |hestcetcomp|x[22]~corein                                                                              ; combout          ;
+; |hestcetcomp|x[21]                                                                                     ; |hestcetcomp|x[21]~corein                                                                              ; combout          ;
+; |hestcetcomp|x[20]                                                                                     ; |hestcetcomp|x[20]~corein                                                                              ; combout          ;
+; |hestcetcomp|x[19]                                                                                     ; |hestcetcomp|x[19]~corein                                                                              ; combout          ;
+; |hestcetcomp|x[24]                                                                                     ; |hestcetcomp|x[24]~corein                                                                              ; combout          ;
+; |hestcetcomp|y[29]                                                                                     ; |hestcetcomp|y[29]~corein                                                                              ; combout          ;
+; |hestcetcomp|y[31]                                                                                     ; |hestcetcomp|y[31]~corein                                                                              ; combout          ;
+; |hestcetcomp|y[30]                                                                                     ; |hestcetcomp|y[30]~corein                                                                              ; combout          ;
++--------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------+------------------+
+
+
++---------------------+
+; Simulator INI Usage ;
++--------+------------+
+; Option ; Usage      ;
++--------+------------+
+
+
++--------------------+
+; Simulator Messages ;
++--------------------+
+Info: *******************************************************************
+Info: Running Quartus II Simulator
+    Info: Version 8.1 Build 163 10/28/2008 SJ Web Edition
+    Info: Processing started: Tue Jun 01 14:23:59 2021
+Info: Command: quartus_sim --read_settings_files=on --write_settings_files=off comparator -c comparator
+Info: Using vector source file "G:/Курсовой проект(работа)/proekt/hectcetdia.vwf"
+Warning: Cannot find channels in vector source file for the following output ports - channels are required for VCD file generation for PowerPlay Power Analyzer
+    Warning: Output port: "|hestcetcomp|tronecomp:inst1|hsestcomp1:inst|voscomp1:inst|cetcomp1:inst|comparator1:inst|inst14~644"
+    Warning: Output port: "|hestcetcomp|tronecomp:inst1|hsestcomp1:inst|voscomp1:inst|cetcomp1:inst|comparator1:inst|inst14~645"
+    Warning: Output port: "|hestcetcomp|tronecomp:inst1|hsestcomp1:inst|voscomp1:inst|cetcomp1:inst|comparator1:inst|inst14~646"
+    Warning: Output port: "|hestcetcomp|tronecomp1:inst|hsestcomp1:inst1|voscomp1:inst1|cetcomp1:inst1|comparator1:inst2|inst12~194"
+    Warning: Output port: "|hestcetcomp|tronecomp:inst1|hsestcomp1:inst|voscomp1:inst|cetcomp1:inst|comparator1:inst|inst14~647"
+    Warning: Output port: "|hestcetcomp|tronecomp1:inst|hsestcomp1:inst1|voscomp1:inst1|cetcomp1:inst1|comparator1:inst2|inst12~195"
+    Warning: Output port: "|hestcetcomp|tronecomp1:inst|hsestcomp1:inst1|voscomp1:inst1|cetcomp1:inst1|comparator1:inst2|inst12~196"
+    Warning: Output port: "|hestcetcomp|tronecomp1:inst|hsestcomp1:inst1|voscomp1:inst1|cetcomp1:inst1|comparator1:inst2|inst12~197"
+    Warning: Output port: "|hestcetcomp|tronecomp1:inst|hsestcomp1:inst1|voscomp1:inst1|cetcomp1:inst1|comparator1:inst2|inst12~198"
+    Warning: Output port: "|hestcetcomp|tronecomp1:inst|hsestcomp1:inst1|voscomp1:inst1|cetcomp1:inst1|comparator1:inst2|inst12~199"
+    Warning: Output port: "|hestcetcomp|tronecomp1:inst|hsestcomp1:inst1|voscomp1:inst1|cetcomp1:inst1|comparator1:inst2|inst12~200"
+    Warning: Output port: "|hestcetcomp|tronecomp1:inst|hsestcomp1:inst1|voscomp1:inst1|cetcomp1:inst1|comparator1:inst2|inst12~201"
+    Warning: Output port: "|hestcetcomp|tronecomp1:inst|hsestcomp1:inst1|voscomp1:inst1|cetcomp1:inst1|comparator1:inst2|inst12~202"
+    Warning: Output port: "|hestcetcomp|tronecomp1:inst|hsestcomp1:inst1|voscomp1:inst1|cetcomp1:inst1|comparator1:inst2|inst12~203"
+    Warning: Output port: "|hestcetcomp|tronecomp1:inst|hsestcomp1:inst1|voscomp1:inst1|cetcomp1:inst1|comparator1:inst2|inst12~204"
+    Warning: Output port: "|hestcetcomp|tronecomp1:inst|hsestcomp1:inst1|voscomp1:inst1|cetcomp1:inst1|comparator1:inst2|inst12~205"
+    Warning: Output port: "|hestcetcomp|tronecomp1:inst|hsestcomp1:inst1|voscomp1:inst1|cetcomp1:inst1|comparator1:inst2|inst12~206"
+    Warning: Output port: "|hestcetcomp|tronecomp1:inst|hsestcomp1:inst1|voscomp1:inst1|cetcomp1:inst1|comparator1:inst2|inst12~207"
+    Warning: Output port: "|hestcetcomp|tronecomp1:inst|hsestcomp1:inst1|voscomp1:inst1|cetcomp1:inst1|comparator1:inst2|inst12~208"
+    Warning: Output port: "|hestcetcomp|tronecomp1:inst|hsestcomp1:inst1|voscomp1:inst1|cetcomp1:inst1|comparator1:inst2|inst10~11"
+    Warning: Output port: "|hestcetcomp|tronecomp1:inst|hsestcomp1:inst1|voscomp1:inst1|cetcomp1:inst1|comparator1:inst2|inst12~209"
+    Warning: Output port: "|hestcetcomp|tronecomp1:inst|hsestcomp1:inst1|voscomp1:inst1|cetcomp1:inst1|comparator1:inst2|inst12~210"
+    Warning: Output port: "|hestcetcomp|tronecomp1:inst|hsestcomp1:inst1|voscomp1:inst1|cetcomp1:inst1|comparator1:inst2|inst12~211"
+    Warning: Output port: "|hestcetcomp|tronecomp1:inst|hsestcomp1:inst1|voscomp1:inst1|cetcomp1:inst1|comparator1:inst2|inst12~212"
+    Warning: Output port: "|hestcetcomp|tronecomp1:inst|hsestcomp1:inst1|voscomp1:inst1|cetcomp1:inst1|comparator1:inst2|inst12~213"
+    Warning: Output port: "|hestcetcomp|tronecomp1:inst|hsestcomp1:inst1|voscomp1:inst1|cetcomp1:inst1|comparator1:inst2|inst12~214"
+    Warning: Output port: "|hestcetcomp|tronecomp1:inst|hsestcomp1:inst1|voscomp1:inst1|cetcomp1:inst1|comparator1:inst2|inst12~215"
+    Warning: Output port: "|hestcetcomp|tronecomp1:inst|hsestcomp1:inst1|voscomp1:inst1|cetcomp1:inst1|comparator1:inst2|inst12~216"
+    Warning: Output port: "|hestcetcomp|tronecomp1:inst|hsestcomp1:inst1|voscomp1:inst1|cetcomp1:inst1|comparator1:inst2|inst12~217"
+    Warning: Output port: "|hestcetcomp|tronecomp1:inst|hsestcomp1:inst1|voscomp1:inst1|cetcomp1:inst1|comparator1:inst|inst14~26"
+    Warning: Output port: "|hestcetcomp|tronecomp1:inst|hsestcomp1:inst1|voscomp1:inst1|cetcomp1:inst|comparator1:inst|inst14~26"
+    Warning: Output port: "|hestcetcomp|tronecomp1:inst|hsestcomp1:inst1|voscomp1:inst|cetcomp1:inst1|comparator1:inst|inst14~26"
+    Warning: Output port: "|hestcetcomp|tronecomp1:inst|hsestcomp1:inst1|voscomp1:inst|cetcomp1:inst|comparator1:inst|inst14~26"
+    Warning: Output port: "|hestcetcomp|tronecomp1:inst|hsestcomp1:inst|voscomp1:inst1|cetcomp1:inst1|comparator1:inst|inst14~26"
+    Warning: Output port: "|hestcetcomp|tronecomp1:inst|hsestcomp1:inst|voscomp1:inst1|cetcomp1:inst|comparator1:inst|inst14~26"
+    Warning: Output port: "|hestcetcomp|tronecomp1:inst|hsestcomp1:inst|voscomp1:inst|cetcomp1:inst1|comparator1:inst|inst14~26"
+    Warning: Output port: "|hestcetcomp|tronecomp1:inst|hsestcomp1:inst|voscomp1:inst|cetcomp1:inst|comparator1:inst|inst14~26"
+    Warning: Output port: "|hestcetcomp|tronecomp:inst1|hsestcomp1:inst|voscomp1:inst1|cetcomp1:inst1|comparator1:inst|inst14~26"
+    Warning: Output port: "|hestcetcomp|tronecomp:inst1|hsestcomp1:inst|voscomp1:inst1|cetcomp1:inst|comparator1:inst|inst14~26"
+    Warning: Output port: "|hestcetcomp|tronecomp:inst1|hsestcomp1:inst|voscomp1:inst|cetcomp1:inst1|comparator1:inst|inst14~26"
+    Warning: Output port: "|hestcetcomp|tronecomp:inst1|hsestcomp1:inst|voscomp1:inst|cetcomp1:inst|comparator1:inst|inst14~648"
+    Warning: Output port: "|hestcetcomp|tronecomp:inst1|hsestcomp1:inst|voscomp1:inst|cetcomp1:inst|comparator1:inst|inst14~649"
+    Warning: Output port: "|hestcetcomp|tronecomp1:inst|hsestcomp1:inst1|voscomp1:inst1|cetcomp1:inst1|comparator1:inst2|inst12~218"
+    Warning: Output port: "|hestcetcomp|tronecomp:inst1|hsestcomp1:inst|voscomp1:inst|cetcomp1:inst|comparator1:inst|inst14~650"
+    Warning: Output port: "|hestcetcomp|tronecomp:inst1|hsestcomp1:inst|voscomp1:inst|cetcomp1:inst|comparator1:inst|inst14~651"
+    Warning: Output port: "|hestcetcomp|tronecomp:inst1|hsestcomp1:inst|voscomp1:inst|cetcomp1:inst|comparator1:inst|inst14~652"
+    Warning: Output port: "|hestcetcomp|tronecomp:inst1|hsestcomp1:inst|voscomp1:inst|cetcomp1:inst|comparator1:inst|inst14~653"
+    Warning: Output port: "|hestcetcomp|tronecomp:inst1|hsestcomp1:inst|voscomp1:inst|cetcomp1:inst|comparator1:inst|inst14~654"
+    Warning: Output port: "|hestcetcomp|tronecomp:inst1|hsestcomp1:inst|voscomp1:inst|cetcomp1:inst|comparator1:inst|inst14~655"
+    Warning: Output port: "|hestcetcomp|tronecomp:inst1|hsestcomp1:inst|voscomp1:inst|cetcomp1:inst|comparator1:inst|inst14~656"
+    Warning: Output port: "|hestcetcomp|tronecomp:inst1|hsestcomp1:inst|voscomp1:inst|cetcomp1:inst|comparator1:inst|inst14~657"
+    Warning: Output port: "|hestcetcomp|tronecomp:inst1|hsestcomp1:inst|voscomp1:inst|cetcomp1:inst1|comparator1:inst|inst14~27"
+    Warning: Output port: "|hestcetcomp|tronecomp:inst1|hsestcomp1:inst|voscomp1:inst1|cetcomp1:inst|comparator1:inst|inst14~27"
+    Warning: Output port: "|hestcetcomp|tronecomp:inst1|hsestcomp1:inst|voscomp1:inst1|cetcomp1:inst1|comparator1:inst|inst14~27"
+    Warning: Output port: "|hestcetcomp|tronecomp1:inst|hsestcomp1:inst|voscomp1:inst|cetcomp1:inst|comparator1:inst|inst14~27"
+    Warning: Output port: "|hestcetcomp|tronecomp1:inst|hsestcomp1:inst|voscomp1:inst|cetcomp1:inst1|comparator1:inst|inst14~27"
+    Warning: Output port: "|hestcetcomp|tronecomp1:inst|hsestcomp1:inst|voscomp1:inst1|cetcomp1:inst|comparator1:inst|inst14~27"
+    Warning: Output port: "|hestcetcomp|tronecomp1:inst|hsestcomp1:inst|voscomp1:inst1|cetcomp1:inst1|comparator1:inst|inst14~27"
+    Warning: Output port: "|hestcetcomp|tronecomp1:inst|hsestcomp1:inst1|voscomp1:inst|cetcomp1:inst|comparator1:inst|inst14~27"
+    Warning: Output port: "|hestcetcomp|tronecomp1:inst|hsestcomp1:inst1|voscomp1:inst|cetcomp1:inst1|comparator1:inst|inst14~27"
+    Warning: Output port: "|hestcetcomp|tronecomp1:inst|hsestcomp1:inst1|voscomp1:inst1|cetcomp1:inst|comparator1:inst|inst14~27"
+    Warning: Output port: "|hestcetcomp|tronecomp1:inst|hsestcomp1:inst1|voscomp1:inst1|cetcomp1:inst1|comparator1:inst|inst14~27"
+    Warning: Output port: "|hestcetcomp|tronecomp1:inst|hsestcomp1:inst1|voscomp1:inst1|cetcomp1:inst1|comparator1:inst2|inst14~48"
+    Warning: Output port: "|hestcetcomp|tronecomp1:inst|hsestcomp1:inst1|voscomp1:inst1|cetcomp1:inst1|comparator1:inst|inst13~26"
+    Warning: Output port: "|hestcetcomp|tronecomp1:inst|hsestcomp1:inst1|voscomp1:inst1|cetcomp1:inst|comparator1:inst|inst13~26"
+    Warning: Output port: "|hestcetcomp|tronecomp1:inst|hsestcomp1:inst1|voscomp1:inst|cetcomp1:inst1|comparator1:inst|inst13~26"
+    Warning: Output port: "|hestcetcomp|tronecomp1:inst|hsestcomp1:inst1|voscomp1:inst|cetcomp1:inst|comparator1:inst|inst13~26"
+    Warning: Output port: "|hestcetcomp|tronecomp1:inst|hsestcomp1:inst|voscomp1:inst1|cetcomp1:inst1|comparator1:inst|inst13~26"
+    Warning: Output port: "|hestcetcomp|tronecomp1:inst|hsestcomp1:inst|voscomp1:inst1|cetcomp1:inst|comparator1:inst|inst13~26"
+    Warning: Output port: "|hestcetcomp|tronecomp1:inst|hsestcomp1:inst|voscomp1:inst|cetcomp1:inst1|comparator1:inst|inst13~26"
+    Warning: Output port: "|hestcetcomp|tronecomp1:inst|hsestcomp1:inst|voscomp1:inst|cetcomp1:inst|comparator1:inst|inst13~26"
+    Warning: Output port: "|hestcetcomp|tronecomp:inst1|hsestcomp1:inst|voscomp1:inst1|cetcomp1:inst1|comparator1:inst|inst13~26"
+    Warning: Output port: "|hestcetcomp|tronecomp:inst1|hsestcomp1:inst|voscomp1:inst1|cetcomp1:inst|comparator1:inst|inst13~26"
+    Warning: Output port: "|hestcetcomp|tronecomp:inst1|hsestcomp1:inst|voscomp1:inst|cetcomp1:inst1|comparator1:inst|inst13~26"
+    Warning: Output port: "|hestcetcomp|tronecomp:inst1|hsestcomp1:inst|voscomp1:inst|cetcomp1:inst|comparator1:inst|inst13~605"
+    Warning: Output port: "|hestcetcomp|tronecomp:inst1|hsestcomp1:inst|voscomp1:inst|cetcomp1:inst|comparator1:inst|inst13~606"
+    Warning: Output port: "|hestcetcomp|tronecomp:inst1|hsestcomp1:inst|voscomp1:inst|cetcomp1:inst|comparator1:inst|inst13~607"
+    Warning: Output port: "|hestcetcomp|tronecomp:inst1|hsestcomp1:inst|voscomp1:inst|cetcomp1:inst|comparator1:inst|inst13~608"
+    Warning: Output port: "|hestcetcomp|tronecomp:inst1|hsestcomp1:inst|voscomp1:inst|cetcomp1:inst|comparator1:inst|inst13~609"
+    Warning: Output port: "|hestcetcomp|tronecomp:inst1|hsestcomp1:inst|voscomp1:inst|cetcomp1:inst|comparator1:inst|inst13~610"
+    Warning: Output port: "|hestcetcomp|tronecomp:inst1|hsestcomp1:inst|voscomp1:inst|cetcomp1:inst|comparator1:inst|inst13~611"
+    Warning: Output port: "|hestcetcomp|tronecomp:inst1|hsestcomp1:inst|voscomp1:inst|cetcomp1:inst|comparator1:inst|inst13~612"
+    Warning: Output port: "|hestcetcomp|tronecomp:inst1|hsestcomp1:inst|voscomp1:inst|cetcomp1:inst1|comparator1:inst|inst13~27"
+    Warning: Output port: "|hestcetcomp|tronecomp:inst1|hsestcomp1:inst|voscomp1:inst1|cetcomp1:inst|comparator1:inst|inst13~27"
+    Warning: Output port: "|hestcetcomp|tronecomp:inst1|hsestcomp1:inst|voscomp1:inst1|cetcomp1:inst1|comparator1:inst|inst13~27"
+    Warning: Output port: "|hestcetcomp|tronecomp1:inst|hsestcomp1:inst|voscomp1:inst|cetcomp1:inst|comparator1:inst|inst13~27"
+    Warning: Output port: "|hestcetcomp|tronecomp1:inst|hsestcomp1:inst|voscomp1:inst|cetcomp1:inst1|comparator1:inst|inst13~27"
+    Warning: Output port: "|hestcetcomp|tronecomp1:inst|hsestcomp1:inst|voscomp1:inst1|cetcomp1:inst|comparator1:inst|inst13~27"
+    Warning: Output port: "|hestcetcomp|tronecomp1:inst|hsestcomp1:inst|voscomp1:inst1|cetcomp1:inst1|comparator1:inst|inst13~27"
+    Warning: Output port: "|hestcetcomp|tronecomp1:inst|hsestcomp1:inst1|voscomp1:inst|cetcomp1:inst|comparator1:inst|inst13~27"
+    Warning: Output port: "|hestcetcomp|tronecomp1:inst|hsestcomp1:inst1|voscomp1:inst|cetcomp1:inst1|comparator1:inst|inst13~27"
+    Warning: Output port: "|hestcetcomp|tronecomp1:inst|hsestcomp1:inst1|voscomp1:inst1|cetcomp1:inst|comparator1:inst|inst13~27"
+    Warning: Output port: "|hestcetcomp|tronecomp1:inst|hsestcomp1:inst1|voscomp1:inst1|cetcomp1:inst1|comparator1:inst|inst13~27"
+    Warning: Output port: "|hestcetcomp|tronecomp1:inst|hsestcomp1:inst1|voscomp1:inst1|cetcomp1:inst1|comparator1:inst2|inst13~48"
+    Warning: Output port: "|hestcetcomp|tronecomp:inst1|hsestcomp1:inst|voscomp1:inst|cetcomp1:inst|comparator1:inst|inst14~658"
+    Warning: Output port: "|hestcetcomp|tronecomp:inst1|hsestcomp1:inst|voscomp1:inst|cetcomp1:inst|comparator1:inst|inst14~659"
+    Warning: Output port: "|hestcetcomp|tronecomp:inst1|hsestcomp1:inst|voscomp1:inst|cetcomp1:inst|comparator1:inst|inst14~660"
+    Warning: Output port: "|hestcetcomp|tronecomp:inst1|hsestcomp1:inst|voscomp1:inst|cetcomp1:inst|comparator1:inst|inst13~613"
+    Warning: Output port: "|hestcetcomp|tronecomp:inst1|hsestcomp1:inst|voscomp1:inst|cetcomp1:inst|comparator1:inst|inst13~614"
+    Warning: Output port: "|hestcetcomp|tronecomp:inst1|hsestcomp1:inst|voscomp1:inst|cetcomp1:inst|comparator1:inst|inst13~615"
+    Warning: Output port: "|hestcetcomp|tronecomp1:inst|hsestcomp1:inst1|voscomp1:inst1|cetcomp1:inst1|comparator1:inst2|inst12~219"
+    Warning: Output port: "|hestcetcomp|tronecomp1:inst|hsestcomp1:inst1|voscomp1:inst1|cetcomp1:inst1|comparator1:inst2|inst12~220"
+    Warning: Output port: "|hestcetcomp|tronecomp:inst1|hsestcomp1:inst|voscomp1:inst|cetcomp1:inst|comparator1:inst|inst14~661"
+    Warning: Output port: "|hestcetcomp|tronecomp1:inst|hsestcomp1:inst1|voscomp1:inst1|cetcomp1:inst1|comparator1:inst2|inst12~221"
+Info: Option to preserve fewer signal transitions to reduce memory requirements is enabled
+    Info: Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
+Info: Simulation partitioned into 1 sub-simulations
+Info: Simulation coverage is      79.15 %
+Info: Number of transitions in simulation is 740
+Info: Created VCD File G:/Курсовой проект(работа)/proekt/comparator.vcd
+Info: Quartus II Simulator was successful. 0 errors, 105 warnings
+    Info: Peak virtual memory: 151 megabytes
+    Info: Processing ended: Tue Jun 01 14:24:00 2021
+    Info: Elapsed time: 00:00:01
+    Info: Total CPU time (on all processors): 00:00:00
+
+

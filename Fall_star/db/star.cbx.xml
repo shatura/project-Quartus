@@ -1,0 +1,7 @@
+<?xml version="1.0" ?>
+<LOG_ROOT>
+	<PROJECT NAME="star">
+		<CBX_INST_ENTRY INSTANCE_NAME="|starfall|counter:inst2|lpm_counter:lpm_counter_component" CBX_FILE_NAME="cntr_sbj.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|starfall|del:inst1|lpm_counter:lpm_counter_component" CBX_FILE_NAME="cntr_i3i.tdf"/>
+	</PROJECT>
+</LOG_ROOT>

@@ -1,0 +1,327 @@
+Version 8.1 Build 163 10/28/2008 SJ Web Edition
+7
+2996
+OFF
+OFF
+OFF
+OFF
+ON
+ON
+ON
+FV_OFF
+Level2
+0
+0
+VRSM_ON
+VHSM_ON
+0
+-- Start Partition --
+-- End Partition --
+-- Start Library Paths --
+-- End Library Paths --
+-- Start VHDL Libraries --
+-- End VHDL Libraries --
+# entity
+comparat
+# storage
+db|comparator.(0).cnf
+db|comparator.(0).cnf
+# case_insensitive
+# source_file
+comparat.bdf
+e9e07e80e2cb8029e856f5e1c53f31ec
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+tronecomp:inst1|hsestcomp:inst1|voscomp:inst2|cetcomp:inst2|comparat:inst
+}
+# macro_sequence
+
+# end
+# entity
+comparator1
+# storage
+db|comparator.(1).cnf
+db|comparator.(1).cnf
+# case_insensitive
+# source_file
+comparator1.bdf
+4b70d3dbd8efc466c9532749bdeb5d27
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+tronecomp1:inst|hsestcomp1:inst1|voscomp1:inst1|cetcomp1:inst1|comparator1:inst2
+tronecomp1:inst|hsestcomp1:inst1|voscomp1:inst1|cetcomp1:inst1|comparator1:inst
+tronecomp1:inst|hsestcomp1:inst1|voscomp1:inst1|cetcomp1:inst|comparator1:inst2
+tronecomp1:inst|hsestcomp1:inst1|voscomp1:inst1|cetcomp1:inst|comparator1:inst
+tronecomp1:inst|hsestcomp1:inst1|voscomp1:inst|cetcomp1:inst1|comparator1:inst2
+tronecomp1:inst|hsestcomp1:inst1|voscomp1:inst|cetcomp1:inst1|comparator1:inst
+tronecomp1:inst|hsestcomp1:inst1|voscomp1:inst|cetcomp1:inst|comparator1:inst2
+tronecomp1:inst|hsestcomp1:inst1|voscomp1:inst|cetcomp1:inst|comparator1:inst
+tronecomp1:inst|hsestcomp1:inst|voscomp1:inst1|cetcomp1:inst1|comparator1:inst2
+tronecomp1:inst|hsestcomp1:inst|voscomp1:inst1|cetcomp1:inst1|comparator1:inst
+tronecomp1:inst|hsestcomp1:inst|voscomp1:inst1|cetcomp1:inst|comparator1:inst2
+tronecomp1:inst|hsestcomp1:inst|voscomp1:inst1|cetcomp1:inst|comparator1:inst
+tronecomp1:inst|hsestcomp1:inst|voscomp1:inst|cetcomp1:inst1|comparator1:inst2
+tronecomp1:inst|hsestcomp1:inst|voscomp1:inst|cetcomp1:inst1|comparator1:inst
+tronecomp1:inst|hsestcomp1:inst|voscomp1:inst|cetcomp1:inst|comparator1:inst2
+tronecomp1:inst|hsestcomp1:inst|voscomp1:inst|cetcomp1:inst|comparator1:inst
+tronecomp:inst1|hsestcomp1:inst|voscomp1:inst1|cetcomp1:inst1|comparator1:inst2
+tronecomp:inst1|hsestcomp1:inst|voscomp1:inst1|cetcomp1:inst1|comparator1:inst
+tronecomp:inst1|hsestcomp1:inst|voscomp1:inst1|cetcomp1:inst|comparator1:inst2
+tronecomp:inst1|hsestcomp1:inst|voscomp1:inst1|cetcomp1:inst|comparator1:inst
+tronecomp:inst1|hsestcomp1:inst|voscomp1:inst|cetcomp1:inst1|comparator1:inst2
+tronecomp:inst1|hsestcomp1:inst|voscomp1:inst|cetcomp1:inst1|comparator1:inst
+tronecomp:inst1|hsestcomp1:inst|voscomp1:inst|cetcomp1:inst|comparator1:inst2
+tronecomp:inst1|hsestcomp1:inst|voscomp1:inst|cetcomp1:inst|comparator1:inst
+tronecomp:inst1|hsestcomp:inst1|voscomp1:inst|cetcomp1:inst1|comparator1:inst2
+tronecomp:inst1|hsestcomp:inst1|voscomp1:inst|cetcomp1:inst1|comparator1:inst
+tronecomp:inst1|hsestcomp:inst1|voscomp1:inst|cetcomp1:inst|comparator1:inst2
+tronecomp:inst1|hsestcomp:inst1|voscomp1:inst|cetcomp1:inst|comparator1:inst
+tronecomp:inst1|hsestcomp:inst1|voscomp:inst2|cetcomp1:inst|comparator1:inst2
+tronecomp:inst1|hsestcomp:inst1|voscomp:inst2|cetcomp1:inst|comparator1:inst
+tronecomp:inst1|hsestcomp:inst1|voscomp:inst2|cetcomp:inst2|comparator1:inst2
+}
+# macro_sequence
+
+# end
+# entity
+cetcomp
+# storage
+db|comparator.(4).cnf
+db|comparator.(4).cnf
+# case_insensitive
+# source_file
+cetcomp.bdf
+39fa7cbf2baea447b68e611ead757d7c
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+tronecomp:inst1|hsestcomp:inst1|voscomp:inst2|cetcomp:inst2
+}
+# macro_sequence
+
+# end
+# entity
+cetcomp1
+# storage
+db|comparator.(5).cnf
+db|comparator.(5).cnf
+# case_insensitive
+# source_file
+cetcomp1.bdf
+1cff2c3e2e59c258c5cf2443fb8fb6
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+tronecomp1:inst|hsestcomp1:inst1|voscomp1:inst1|cetcomp1:inst1
+tronecomp1:inst|hsestcomp1:inst1|voscomp1:inst1|cetcomp1:inst
+tronecomp1:inst|hsestcomp1:inst1|voscomp1:inst|cetcomp1:inst1
+tronecomp1:inst|hsestcomp1:inst1|voscomp1:inst|cetcomp1:inst
+tronecomp1:inst|hsestcomp1:inst|voscomp1:inst1|cetcomp1:inst1
+tronecomp1:inst|hsestcomp1:inst|voscomp1:inst1|cetcomp1:inst
+tronecomp1:inst|hsestcomp1:inst|voscomp1:inst|cetcomp1:inst1
+tronecomp1:inst|hsestcomp1:inst|voscomp1:inst|cetcomp1:inst
+tronecomp:inst1|hsestcomp1:inst|voscomp1:inst1|cetcomp1:inst1
+tronecomp:inst1|hsestcomp1:inst|voscomp1:inst1|cetcomp1:inst
+tronecomp:inst1|hsestcomp1:inst|voscomp1:inst|cetcomp1:inst1
+tronecomp:inst1|hsestcomp1:inst|voscomp1:inst|cetcomp1:inst
+tronecomp:inst1|hsestcomp:inst1|voscomp1:inst|cetcomp1:inst1
+tronecomp:inst1|hsestcomp:inst1|voscomp1:inst|cetcomp1:inst
+tronecomp:inst1|hsestcomp:inst1|voscomp:inst2|cetcomp1:inst
+}
+# macro_sequence
+
+# end
+# entity
+voscomp
+# storage
+db|comparator.(2).cnf
+db|comparator.(2).cnf
+# case_insensitive
+# source_file
+voscomp.bdf
+ab926d1166a82ae056c2df0c7f1e0fc
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+tronecomp:inst1|hsestcomp:inst1|voscomp:inst2
+}
+# macro_sequence
+
+# end
+# entity
+voscomp1
+# storage
+db|comparator.(6).cnf
+db|comparator.(6).cnf
+# case_insensitive
+# source_file
+voscomp1.bdf
+4924819185c12217492f23613cad0e0
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+tronecomp1:inst|hsestcomp1:inst1|voscomp1:inst1
+tronecomp1:inst|hsestcomp1:inst1|voscomp1:inst
+tronecomp1:inst|hsestcomp1:inst|voscomp1:inst1
+tronecomp1:inst|hsestcomp1:inst|voscomp1:inst
+tronecomp:inst1|hsestcomp1:inst|voscomp1:inst1
+tronecomp:inst1|hsestcomp1:inst|voscomp1:inst
+tronecomp:inst1|hsestcomp:inst1|voscomp1:inst
+}
+# macro_sequence
+
+# end
+# entity
+hsestcomp
+# storage
+db|comparator.(3).cnf
+db|comparator.(3).cnf
+# case_insensitive
+# source_file
+hsestcomp.bdf
+7cf1186b07b5c2062e57c711e8e926
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+tronecomp:inst1|hsestcomp:inst1
+}
+# macro_sequence
+
+# end
+# entity
+hsestcomp1
+# storage
+db|comparator.(7).cnf
+db|comparator.(7).cnf
+# case_insensitive
+# source_file
+hsestcomp1.bdf
+982433d816ed11ff8f49db5c7472aa1
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+tronecomp1:inst|hsestcomp1:inst1
+tronecomp1:inst|hsestcomp1:inst
+tronecomp:inst1|hsestcomp1:inst
+}
+# macro_sequence
+
+# end
+# entity
+tronecomp1
+# storage
+db|comparator.(9).cnf
+db|comparator.(9).cnf
+# case_insensitive
+# source_file
+tronecomp1.bdf
+98aaf9ad8e37d4da9d46a755cf7e2
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+tronecomp1:inst
+}
+# macro_sequence
+
+# end
+# entity
+tronecomp
+# storage
+db|comparator.(8).cnf
+db|comparator.(8).cnf
+# case_insensitive
+# source_file
+tronecomp.bdf
+9cee91301fe93fce54ff4d74094756a
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+tronecomp:inst1
+}
+# macro_sequence
+
+# end
+# entity
+comparator01
+# storage
+db|comparator.(11).cnf
+db|comparator.(11).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+comparator01.vhd
+e932506320196c56b2b01c57f98
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# lmf
+c:|altera|81|quartus|lmf|maxplus2.lmf
+9a59d39b0706640b4b2718e8a1ff1f
+# macro_sequence
+
+# end
+# entity
+hestcetcomp
+# storage
+db|comparator.(10).cnf
+db|comparator.(10).cnf
+# case_insensitive
+# source_file
+hestcetcomp.bdf
+7564cbb5886ac2a3c119cb97b79f8fe5
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+|
+}
+# macro_sequence
+
+# end
+# complete
+

@@ -1,0 +1,103 @@
+Version 8.1 Build 163 10/28/2008 SJ Web Edition
+11
+946
+OFF
+OFF
+OFF
+OFF
+ON
+ON
+ON
+FV_OFF
+Level2
+0
+0
+VRSM_ON
+VHSM_ON
+0
+-- Start Partition --
+-- End Partition --
+-- Start Library Paths --
+-- End Library Paths --
+-- Start VHDL Libraries --
+-- End VHDL Libraries --
+# entity
+Kursk
+# storage
+db|Kursk.(2).cnf
+db|Kursk.(2).cnf
+# case_insensitive
+# source_file
+Kursk.bdf
+e479738f8a60d3263e9abfba9bee6f7c
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+Kursk:inst30
+Kursk:inst31
+Kursk:inst32
+Kursk:inst33
+Kursk:inst34
+}
+# macro_sequence
+
+# end
+# entity
+perenos
+# storage
+db|Kursk.(1).cnf
+db|Kursk.(1).cnf
+# case_insensitive
+# source_file
+perenos.bdf
+a4672443448f542a99ce735d6f4641f
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# macro_sequence
+
+# end
+# entity
+5razrad
+# storage
+db|Kursk.(0).cnf
+db|Kursk.(0).cnf
+# case_insensitive
+# source_file
+5razrad.bdf
+5e3fbfafb286bcc8c7c1c777869cc5
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# macro_sequence
+
+# end
+# entity
+paralelsum
+# storage
+db|Kursk.(3).cnf
+db|Kursk.(3).cnf
+# case_insensitive
+# source_file
+paralelsum.bdf
+cf4b591dfc5d9815479f261b30a5c94e
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+|
+}
+# macro_sequence
+
+# end
+# complete
+

@@ -1,0 +1,13 @@
+module comparater (A,B,ALB,AEB,AMB);
+ input [1:0] A,B;
+ input AMB;
+ input AEB;
+ input ALB;
+ output ALB; 
+ output AEB; 
+ output AMB;
+ always @(*)
+ 
+ begin
+  if (AEB=1)
+  A=B 

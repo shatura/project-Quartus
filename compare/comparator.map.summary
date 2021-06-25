@@ -1,0 +1,15 @@
+Analysis & Synthesis Status : Successful - Tue Jun 01 14:13:21 2021
+Quartus II Version : 8.1 Build 163 10/28/2008 SJ Web Edition
+Revision Name : comparator
+Top-level Entity Name : hestcetcomp
+Family : Stratix II
+Logic utilization : N/A
+    Combinational ALUTs : 104
+    Dedicated logic registers : 0
+Total registers : 0
+Total pins : 131
+Total virtual pins : 0
+Total block memory bits : 0
+DSP block 9-bit elements : 0
+Total PLLs : 0
+Total DLLs : 0

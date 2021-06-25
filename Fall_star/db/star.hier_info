@@ -1,0 +1,168 @@
+|starfall
+L[1] <= inst31.DB_MAX_OUTPUT_PORT_TYPE
+L[2] <= inst12.DB_MAX_OUTPUT_PORT_TYPE
+L[3] <= inst13.DB_MAX_OUTPUT_PORT_TYPE
+L[4] <= inst15.DB_MAX_OUTPUT_PORT_TYPE
+L[5] <= inst16.DB_MAX_OUTPUT_PORT_TYPE
+L[6] <= inst17.DB_MAX_OUTPUT_PORT_TYPE
+L[7] <= inst14.DB_MAX_OUTPUT_PORT_TYPE
+L[8] <= inst18.DB_MAX_OUTPUT_PORT_TYPE
+CLK => del:inst1.clock
+CLIK => 7474:inst25.2D
+CLIK => 7474:inst25.2CLK
+START => 7474:inst25.1CLK
+START => 7474:inst25.1D
+RESET => inst.IN0
+RESET => counter:inst2.aclr
+
+
+|starfall|74138:inst10
+Y7N <= 22.DB_MAX_OUTPUT_PORT_TYPE
+G1 => 8.IN0
+G2BN => 1.IN1
+G2AN => 1.IN2
+B => 10.IN0
+A => 9.IN0
+C => 11.IN0
+Y6N <= 21.DB_MAX_OUTPUT_PORT_TYPE
+Y5N <= 20.DB_MAX_OUTPUT_PORT_TYPE
+Y4N <= 19.DB_MAX_OUTPUT_PORT_TYPE
+Y3N <= 18.DB_MAX_OUTPUT_PORT_TYPE
+Y2N <= 17.DB_MAX_OUTPUT_PORT_TYPE
+Y1N <= 16.DB_MAX_OUTPUT_PORT_TYPE
+Y0N <= 15.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|starfall|counter:inst2
+aclr => lpm_counter:lpm_counter_component.aclr
+clk_en => lpm_counter:lpm_counter_component.clk_en
+clock => lpm_counter:lpm_counter_component.clock
+cnt_en => lpm_counter:lpm_counter_component.cnt_en
+q[0] <= lpm_counter:lpm_counter_component.q[0]
+q[1] <= lpm_counter:lpm_counter_component.q[1]
+q[2] <= lpm_counter:lpm_counter_component.q[2]
+
+
+|starfall|counter:inst2|lpm_counter:lpm_counter_component
+clock => cntr_sbj:auto_generated.clock
+clk_en => cntr_sbj:auto_generated.clk_en
+cnt_en => cntr_sbj:auto_generated.cnt_en
+updown => ~NO_FANOUT~
+aclr => cntr_sbj:auto_generated.aclr
+aset => ~NO_FANOUT~
+aconst => ~NO_FANOUT~
+aload => ~NO_FANOUT~
+sclr => ~NO_FANOUT~
+sset => ~NO_FANOUT~
+sconst => ~NO_FANOUT~
+sload => ~NO_FANOUT~
+data[0] => ~NO_FANOUT~
+data[1] => ~NO_FANOUT~
+data[2] => ~NO_FANOUT~
+cin => ~NO_FANOUT~
+q[0] <= cntr_sbj:auto_generated.q[0]
+q[1] <= cntr_sbj:auto_generated.q[1]
+q[2] <= cntr_sbj:auto_generated.q[2]
+cout <= <GND>
+eq[0] <= <GND>
+eq[1] <= <GND>
+eq[2] <= <GND>
+eq[3] <= <GND>
+eq[4] <= <GND>
+eq[5] <= <GND>
+eq[6] <= <GND>
+eq[7] <= <GND>
+eq[8] <= <GND>
+eq[9] <= <GND>
+eq[10] <= <GND>
+eq[11] <= <GND>
+eq[12] <= <GND>
+eq[13] <= <GND>
+eq[14] <= <GND>
+eq[15] <= <GND>
+
+
+|starfall|counter:inst2|lpm_counter:lpm_counter_component|cntr_sbj:auto_generated
+aclr => counter_reg_bit1a[2].ACLR
+aclr => counter_reg_bit1a[1].ACLR
+aclr => counter_reg_bit1a[0].ACLR
+clock => counter_reg_bit1a[2].CLK
+clock => counter_reg_bit1a[1].CLK
+clock => counter_reg_bit1a[0].CLK
+q[0] <= counter_reg_bit1a[0].REGOUT
+q[1] <= counter_reg_bit1a[1].REGOUT
+q[2] <= counter_reg_bit1a[2].REGOUT
+
+
+|starfall|del:inst1
+clock => lpm_counter:lpm_counter_component.clock
+cout <= lpm_counter:lpm_counter_component.cout
+q[0] <= lpm_counter:lpm_counter_component.q[0]
+q[1] <= lpm_counter:lpm_counter_component.q[1]
+q[2] <= lpm_counter:lpm_counter_component.q[2]
+
+
+|starfall|del:inst1|lpm_counter:lpm_counter_component
+clock => cntr_i3i:auto_generated.clock
+clk_en => ~NO_FANOUT~
+cnt_en => ~NO_FANOUT~
+updown => ~NO_FANOUT~
+aclr => ~NO_FANOUT~
+aset => ~NO_FANOUT~
+aconst => ~NO_FANOUT~
+aload => ~NO_FANOUT~
+sclr => ~NO_FANOUT~
+sset => ~NO_FANOUT~
+sconst => ~NO_FANOUT~
+sload => ~NO_FANOUT~
+data[0] => ~NO_FANOUT~
+data[1] => ~NO_FANOUT~
+data[2] => ~NO_FANOUT~
+cin => ~NO_FANOUT~
+q[0] <= cntr_i3i:auto_generated.q[0]
+q[1] <= cntr_i3i:auto_generated.q[1]
+q[2] <= cntr_i3i:auto_generated.q[2]
+cout <= cntr_i3i:auto_generated.cout
+eq[0] <= <GND>
+eq[1] <= <GND>
+eq[2] <= <GND>
+eq[3] <= <GND>
+eq[4] <= <GND>
+eq[5] <= <GND>
+eq[6] <= <GND>
+eq[7] <= <GND>
+eq[8] <= <GND>
+eq[9] <= <GND>
+eq[10] <= <GND>
+eq[11] <= <GND>
+eq[12] <= <GND>
+eq[13] <= <GND>
+eq[14] <= <GND>
+eq[15] <= <GND>
+
+
+|starfall|del:inst1|lpm_counter:lpm_counter_component|cntr_i3i:auto_generated
+clock => counter_reg_bit1a[2].CLK
+clock => counter_reg_bit1a[1].CLK
+clock => counter_reg_bit1a[0].CLK
+cout <= cout_actual.DB_MAX_OUTPUT_PORT_TYPE
+q[0] <= counter_reg_bit1a[0].REGOUT
+q[1] <= counter_reg_bit1a[1].REGOUT
+q[2] <= counter_reg_bit1a[2].REGOUT
+
+
+|starfall|7474:inst25
+1Q <= 9.DB_MAX_OUTPUT_PORT_TYPE
+1CLRN => 9.ACLR
+1CLK => 9.CLK
+1D => 9.DATAIN
+1PRN => 9.PRESET
+1QN <= 16.DB_MAX_OUTPUT_PORT_TYPE
+2Q <= 10.DB_MAX_OUTPUT_PORT_TYPE
+2CLRN => 10.ACLR
+2CLK => 10.CLK
+2D => 10.DATAIN
+2PRN => 10.PRESET
+2QN <= 15.DB_MAX_OUTPUT_PORT_TYPE
+
+

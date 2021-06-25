@@ -1,0 +1,111 @@
+|paralelsum
+C[0] <= Ci.DB_MAX_OUTPUT_PORT_TYPE
+C[1] <= <GND>
+C[2] <= inst17.DB_MAX_OUTPUT_PORT_TYPE
+C[3] <= inst13.DB_MAX_OUTPUT_PORT_TYPE
+C[4] <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+Ci => C[0].DATAIN
+Ci => inst9.IN0
+Ci => inst20.IN0
+Ci => inst36.IN1
+Ci => inst.IN4
+B[0] => inst29.IN0
+B[0] => inst10.IN2
+B[0] => inst19.IN1
+B[0] => Kursk:inst30.B
+B[0] => inst37.IN0
+B[0] => inst1.IN3
+B[1] => inst11.IN1
+B[1] => inst4.IN2
+B[1] => inst18.IN0
+B[1] => Kursk:inst31.B
+B[2] => inst12.IN0
+B[2] => inst16.IN0
+B[2] => inst23.IN0
+B[2] => inst3.IN1
+B[2] => Kursk:inst32.B
+B[3] => inst8.IN0
+B[3] => inst5.IN0
+B[3] => Kursk:inst33.B
+B[4] => Kursk:inst34.B
+A[0] => inst28.IN0
+A[0] => inst10.IN0
+A[0] => inst19.IN0
+A[0] => Kursk:inst30.A
+A[0] => inst37.IN1
+A[0] => inst1.IN4
+A[1] => inst22.IN0
+A[1] => inst11.IN0
+A[1] => inst4.IN0
+A[1] => inst18.IN1
+A[1] => Kursk:inst31.A
+A[2] => inst12.IN1
+A[2] => inst15.IN0
+A[2] => inst3.IN0
+A[2] => Kursk:inst32.A
+A[3] => inst7.IN0
+A[3] => inst5.IN1
+A[3] => Kursk:inst33.A
+A[4] => Kursk:inst34.A
+sum[0] <= Kursk:inst30.Sum
+sum[1] <= Kursk:inst31.Sum
+sum[2] <= Kursk:inst32.Sum
+sum[3] <= Kursk:inst33.Sum
+sum[4] <= Kursk:inst34.Sum
+
+
+|paralelsum|Kursk:inst30
+Sum <= inst.DB_MAX_OUTPUT_PORT_TYPE
+C => inst11.IN0
+C => inst12.IN1
+B => inst11.IN1
+B => inst12.IN0
+A => inst.IN1
+A => inst10.IN1
+carry <= inst9.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|paralelsum|Kursk:inst31
+Sum <= inst.DB_MAX_OUTPUT_PORT_TYPE
+C => inst11.IN0
+C => inst12.IN1
+B => inst11.IN1
+B => inst12.IN0
+A => inst.IN1
+A => inst10.IN1
+carry <= inst9.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|paralelsum|Kursk:inst32
+Sum <= inst.DB_MAX_OUTPUT_PORT_TYPE
+C => inst11.IN0
+C => inst12.IN1
+B => inst11.IN1
+B => inst12.IN0
+A => inst.IN1
+A => inst10.IN1
+carry <= inst9.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|paralelsum|Kursk:inst33
+Sum <= inst.DB_MAX_OUTPUT_PORT_TYPE
+C => inst11.IN0
+C => inst12.IN1
+B => inst11.IN1
+B => inst12.IN0
+A => inst.IN1
+A => inst10.IN1
+carry <= inst9.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|paralelsum|Kursk:inst34
+Sum <= inst.DB_MAX_OUTPUT_PORT_TYPE
+C => inst11.IN0
+C => inst12.IN1
+B => inst11.IN1
+B => inst12.IN0
+A => inst.IN1
+A => inst10.IN1
+carry <= inst9.DB_MAX_OUTPUT_PORT_TYPE
+
+
